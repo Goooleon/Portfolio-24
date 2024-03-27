@@ -24,7 +24,7 @@ export default function Project() {
                 Bing Video Design Kit
             </h1>
             <p>
-                The Bing Design System, while comprehensive, doesn't fully cater to the specific needs of the multimedia team. To bridge this gap, the Video Design Kit was created within the Bing Design System framework. It serves as a customized resource for video design, offering a centralized hub for Multimedia Designers to synchronize and collaborate effectively.
+                The Bing Design System, while comprehensive, doesn&apos;t fully cater to the specific needs of the multimedia team. To bridge this gap, the Video Design Kit was created within the Bing Design System framework. It serves as a customized resource for video design, offering a centralized hub for Multimedia Designers to synchronize and collaborate effectively.
             </p>
         </div>
     );

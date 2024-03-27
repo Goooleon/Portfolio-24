@@ -9,19 +9,24 @@ export const metadata: Metadata = {
 
 export default function Project() {
     return (
-    <div>
-        <Link href="/">
-         <Image
-              src="/Gu-LOGO.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={60}
-              height={24}
-              priority
-        />
-        </Link>
-        <h1>Bing Video Design Kit</h1>
-    </div>
+        <div>
+            <Link href="/">
+                <Image
+                    src="/Gu-LOGO.svg"
+                    alt="Vercel Logo"
+                    className="dark:invert"
+                    width={60}
+                    height={24}
+                    priority
+                />
+            </Link>
+            <h1>
+                Bing Video Design Kit
+            </h1>
+            <p>
+                The Bing Design System, while comprehensive, doesn't fully cater to the specific needs of the multimedia team. To bridge this gap, the Video Design Kit was created within the Bing Design System framework. It serves as a customized resource for video design, offering a centralized hub for Multimedia Designers to synchronize and collaborate effectively.
+            </p>
+        </div>
     );
-    
+
 } 

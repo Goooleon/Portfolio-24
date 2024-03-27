@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import DownloadButton from "./components/components";
+import DownloadButton from "./Components/buttons";
 
 export default function Home() {
   return (

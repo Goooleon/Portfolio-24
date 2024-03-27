@@ -5,3 +5,5 @@ function DownloadButton() {
         </div>
     );
   }
+
+  export default DownloadButton;

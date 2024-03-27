@@ -1,6 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image';
 import Link from 'next/link';
-import DownloadButton from "./Components/buttons";
+import DownloadButton from './Components/buttons';
+import projects from '../public/work.png';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="#"
+            href="/"
             target="_self"
             rel="noopener noreferrer"
           >
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className='m-32'>
         <article aria-label="Introduction">
           <h1><span role="img" aria-label="Waving Hand">👋🏽</span> Hey, I am Gü</h1>
           <h2>
@@ -41,13 +42,15 @@ export default function Home() {
       </div>
 
 
-      <div className="m-32">
+      <div className="m-12 w-full aspect-auto relative">
         <Image
-          src="/work.png"
-          alt="Vercel Logo"
-          width={1440}
-          height={690}
-          priority
+          src={projects}
+          alt="projects"
+          placeholder='blur'
+          loading='lazy'
+          quality={100}
+          sizes="100vw"
+          objectFit='contain'
         />
       </div>
 

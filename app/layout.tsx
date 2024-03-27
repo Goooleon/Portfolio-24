@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}
-      <footer>
+      <footer className="m-32 grid">
       <p>goooleon@gmail.com</p> 
       <p>Made 🖖🏽by ©Gü 2023-2024</p></footer>
       </body>

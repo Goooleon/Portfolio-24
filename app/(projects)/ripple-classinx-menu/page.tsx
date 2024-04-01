@@ -11,7 +11,7 @@ export default function Project() {
             <article className="my-24 flex flex-col gap-12">
                 <h1 className="text-2xl font-bold">Ripple - a refreshed ClassIn X menu</h1>
                 <p>May-Jul, 2021</p>
-                <p>Ripple revitalizes ClassIn X's digital whiteboard by overhauling its menu to boost usability and modernize the interface. This enhancement aims to streamline presentations and interactions, providing a smoother, more intuitive experience for instructors and students alike.</p>
+                <p>Ripple revitalizes ClassIn X&apos;s digital whiteboard by overhauling its menu to boost usability and modernize the interface. This enhancement aims to streamline presentations and interactions, providing a smoother, more intuitive experience for instructors and students alike.</p>
                 <div className="w-full aspect-auto relative">
                     <Image
                         src="/ripple-classinx-menu/cover.png"

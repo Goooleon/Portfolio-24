@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-      <footer className="m-32 grid">
-      <p>goooleon@gmail.com</p> 
-      <p>Made 🖖🏽by ©Gü 2023-2024</p></footer>
+      <body className={inter.className}>
+        {children}
+        <footer className="m-8 md:mx-64 md:my-32 grid">
+          <p>goooleon@gmail.com • <a href="https://www.instagram.com/guforgood/">Instagram</a> • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/">LinkedIn</a> </p>
+          <p>Made 🖖🏽by ©Gü 2023-2024</p></footer>
       </body>
     </html>
   );

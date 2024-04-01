@@ -5,44 +5,30 @@ import projects from '../public/work.png';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="/"
-            target="_self"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/Gu-LOGO.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={60}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className='m-32'>
+    <main className="flex min-h-screen flex-col items-center m-8 md:mx-64 md:my-32">
+      <div className='mb-4'>
         <article aria-label="Introduction">
-          <h1><span role="img" aria-label="Waving Hand">👋🏽</span> Hey, I am Gü</h1>
-          <h2>
-            a Product Designer at <span aria-label="Microsoft">Micros🌎ft</span> in <span aria-label="Location">📍Beijing,</span>
-          </h2>
-          <p>
-            a creative mind that blends Human Centered Design with Random Intuition,
+          <h1 className={`mb-3 text-4xl font-regular mb-8`}><span role="img" aria-label="Waving Hand">👋🏽</span> Hey, I am Gü</h1>
+          <p className={`mb-3 text-2xl font-regular`}>
+            a <span className={'font-bold'}>Product Designer</span> at <span aria-label="Microsoft">Micros🌎ft</span> in <span aria-label="Location">📍Beijing,</span>
           </p>
-          <p>
+          <p className={`mb-3 text-2xl font-regular`}>
+            a creative mind that blends <span className={'font-bold'}>Human Centered Design</span> with <span className={'font-bold'}>Random Intuition</span>,
+          </p>
+          <p className={`mb-3 text-2xl font-regular`}>
             a free soul who enjoys <span aria-label="skiing">🎿</span> <span aria-label="frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
           </p>
         </article>
+        <video autoPlay loop style={{ width: '240px', height: '240px' }}>
+          <source src="/gu-avatar.mov" />
+        </video>
+        <DownloadButton 
+          label='More About Me'
+        />
       </div>
 
 
-      <div className="m-12 w-full aspect-auto relative">
+      <div className="m-8 w-full aspect-auto relative">
         <Image
           src={projects}
           alt="projects"
@@ -66,24 +52,41 @@ export default function Home() {
           <li className="p-4"><Link href="/follow-on-edge">
             Follow on Edge
           </Link></li>
+          <li className="p-4"><Link href="/grad-thesis-myt-search">
+            Improving Search Relevance Feedback through Human Centered Design
+          </Link></li>
+          <li className="p-4"><Link href="/joa-arch-web">
+            JOA website revamp
+          </Link></li>
+          <li className="p-4"><Link href="/rethink-ppt-animation">
+            Rethinking PowerPoint Animation Experience
+          </Link></li>
+          <li className="p-4"><Link href="/ripple-classinx-menu">
+            Ripple - a refreshed ClassIn X menu
+          </Link></li>
+          <li className="p-4"><Link href="/uxad-saeco-redesign">
+            Saeco Xelsis Experience Redesign
+          </Link></li>
         </ul>
       </div>
 
       <div className="m-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
         <article>
-          <h1 className="font-bold">why design?</h1>
-          <p className="text-sm opacity-50"> I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.
+          <h1 className={`mb-4 text-3xl font-bold`}>why design?</h1>
+          <p className="text-xl opacity-50"> I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.
             < br /> <br />
             I devote myself to creating (functional) useful and/or (emotional) enjoyable experiences that I call it meaningful moments.
           </p>
         </article>
-        <DownloadButton />
+        <DownloadButton 
+          label='Resume.pdf'
+        />
       </div>
 
       <div className="m-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
         <article>
-          <h1 className="font-bold">Gü vs Gu</h1>
-          <p className="text-sm opacity-50">
+          <h1 className={`mb-4 text-3xl font-bold`}>Gü vs Gu</h1>
+          <p className="text-xl opacity-50">
             Gu is my family name, and I am simply used to it. The Umlaut is to make u a S-M-I-L-E-Y FACE :)
           </p>
         </article>
@@ -91,8 +94,8 @@ export default function Home() {
 
       <div className="m-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
         <article>
-          <h1 className="font-bold">a little more</h1>
-          <p className="text-sm opacity-50">
+          <h1 className={`mb-4 text-3xl font-bold`}>a little more</h1>
+          <p className="text-xl opacity-50">
             Just a little more, more personal, not about work or profession.
           </p>
         </article>

@@ -10,16 +10,6 @@ export const metadata: Metadata = {
 export default function Project() {
     return (
         <div>
-            <Link href="/">
-                <Image
-                    src="/Gu-LOGO.svg"
-                    alt="Vercel Logo"
-                    className="dark:invert"
-                    width={60}
-                    height={24}
-                    priority
-                />
-            </Link>
             <h1>
                 Bing Video Design Kit
             </h1>

@@ -15,7 +15,7 @@ export default function ProjectDetailLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="m-8 md:mx-64 md:my-32">
+    <div className="m-4 md:mx-64 md:my-32">
       <header>
         <div className="z-10 flex font-mono justify-between mb-12 lg:flex">
           <div>

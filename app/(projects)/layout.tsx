@@ -15,9 +15,9 @@ export default function ProjectDetailLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="m-4 md:mx-64 md:my-32">
+    <div>
       <header>
-        <div className="z-10 flex font-mono justify-between mb-12 lg:flex">
+        <div className="z-10 flex font-mono justify-between p-4 md:px-64 md:py-24">
           <div>
             <a
               className="pointer-events-none lg:pointer-events-auto lg:p-0"
@@ -49,7 +49,6 @@ export default function ProjectDetailLayout({
         </div>
       </header>
       {children}
-      <h1>this is tailored page layout for project detail page!</h1>;
     </div>
   );
 }

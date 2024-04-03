@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import ProjectCaption from "@/app/Components/projectcaption";
 
 export const metadata: Metadata = {
     title: "Rethinking PowerPoint Animation Experience",
@@ -6,5 +7,17 @@ export const metadata: Metadata = {
 }
 
 export default function Project() {
-    return <h1>Rethinking PowerPoint Animation Experience</h1>;
+    return ( 
+    <div>
+        <ProjectCaption 
+            projectTitle="Rethinking PowerPoint Animation Experience"
+            projectDate="May"
+            projectDes="this is a test"
+            projectCover="/rethink-ppt-animation/cover.png"
+            role="UX Designer Intern"
+            platform="Web App"
+            highlights="Obtained a score of 9 (out of 10) for the thesis"
+        />
+    </div>
+    );
 } 

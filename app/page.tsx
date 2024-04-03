@@ -19,7 +19,7 @@ export default function Home() {
             a free soul who enjoys <span aria-label="skiing">🎿</span> <span aria-label="frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
           </p>
         </article>
-        <video autoPlay loop style={{ width: '240px', height: '240px' }}>
+        <video autoPlay loop muted style={{ width: '240px', height: '240px' }}>
           <source src="/gu-avatar.mov" />
         </video>
         <DownloadButton 

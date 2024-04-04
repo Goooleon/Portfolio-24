@@ -8,23 +8,28 @@ type FeatureListProps = {
   src: string;
   title: string;
   description: string;
-  alt?: string; // Optional alt text for the image
+  alt?: string;
+  swap?: boolean; // Determine the order of media and text
 };
 
-const FeatureList: React.FC<FeatureListProps> = ({ mediaType, src, title, description, alt = '' }) => {
+const FeatureList: React.FC<FeatureListProps> = ({
+  mediaType,
+  src,
+  title,
+  description,
+  alt = '',
+  swap = false,
+}) => {
   const mediaRef = useRef<HTMLVideoElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-        if (entry.isIntersecting && mediaType === 'video' && mediaRef.current) {
-          mediaRef.current.play();
-        }
-      },
-      { threshold: 0.5 } // Trigger when 50% of the element is in view
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsVisible(entry.isIntersecting);
+      if (entry.isIntersecting && mediaType === 'video' && mediaRef.current) {
+        mediaRef.current.play();
+      }
+    }, { threshold: 0.5 });
 
     if (mediaRef.current) {
       observer.observe(mediaRef.current);
@@ -37,11 +42,23 @@ const FeatureList: React.FC<FeatureListProps> = ({ mediaType, src, title, descri
     };
   }, [mediaType]);
 
+  // Adjust the layout based on the `swap` prop
+  const layoutClass = swap ? 'md:flex-row-reverse' : 'md:flex-row';
+
   return (
-    <div className="flex flex-col md:flex-row items-start my-8 w-full">
-      <div className="w-full md:w-1/2 h-auto rounded-2xl overflow-hidden">
+    <div className={`flex flex-col my-8 w-full md:items-start ${layoutClass}`}>
+      <div className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
+        {/* Media content */}
         {mediaType === 'image' ? (
-          <Image src={src} alt={alt || 'Media image'} layout="responsive" width={100} height={56} objectFit="cover" />
+                      <Image
+                      src={src}
+                      alt={alt}
+                      fill // Use 'fill' to ensure the image fills the padded container
+                      objectFit="cover"
+                      quality={100}
+                      sizes="100vw"
+                      loading='lazy'
+                  />
         ) : (
           <video
             ref={mediaRef}
@@ -50,8 +67,7 @@ const FeatureList: React.FC<FeatureListProps> = ({ mediaType, src, title, descri
             loop
             playsInline
             autoPlay={isVisible}
-            style={{ width: '100%', height: 'auto' }}
-            className="w-full h-auto"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         )}
       </div>

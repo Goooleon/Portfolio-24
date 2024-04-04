@@ -24,14 +24,15 @@ export default function Project() {
                 highlights="Shipped in 2021 with an issued design patent"
 
             />
+
             <div className="max-w-screen-2xl w-full rounded-2xl border-t border-zinc-800 p-4 py-12 md:px-64 md:py-24">
-                <div aria-label="project background" className="mb-4 md:mb-56">
+                <div aria-label="introduction section" className="mb-4 md:mb-56">
                     <TextBlock
                         sectionSubtitle="Background"
                         sectionTitle="The initial ClassIn X menu"
                         sectionDes="The initial menu features a two-ring circular design: the inner ring presents a static array of primary functions, while the outer ring serves as a flexible space for secondary features and beyond."
                     />
-                    <ResponsiveImage 
+                    <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-design.png"
                         alt="Description of the image"
                         imgSize="34%"
@@ -39,14 +40,14 @@ export default function Project() {
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
                     />
-                    <ResponsiveImage 
+                    <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-IA.png"
                         alt="Description of the image"
                         imgSize="43%"
                     />
                 </div>
 
-                <div aria-label="Key experience problems" className="mb-4 md:mb-24">
+                <div aria-label="problem-section" className="mb-4 md:mb-24">
                     <TextBlock
                         sectionSubtitle="Experience pain points"
                         sectionTitle="Key experience problems"
@@ -77,7 +78,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div aria-label="Key experience problems" className="mb-4 md:mb-24">
+                <div aria-label="research section" className="mb-4 md:mb-24">
                     <TextBlock
                         sectionSubtitle="User Research"
                         sectionTitle="Immersion with real users"
@@ -98,6 +99,66 @@ export default function Project() {
                                 imgAlt="example of card sorting"
                                 title="Card Sorting"
                                 des="Participants were asked to choose 10 out of 16 and put them into 2/3 groups by importance."
+                            />
+                        </div>
+                    </div>
+                    <TextBlock
+                        sectionDes="By synthesizing the research findings, we discovered that user goals fall into three categories, closely mirroring the stages of a traditional lecture process."
+                    />
+                    <div className="flex flex-col gap-4 my-16 w-full md:flex-row md:items-stretch">
+                        <div className="flex-1">
+                            <RichCard
+                                tag="Primary user goal"
+                                title="Smooth Knowledge Sharing"
+                                des="Users need to make sure a smooth lecturing experience in accordance to course syllabus."
+                            />
+                        </div>
+                        <div className="flex-1">
+                            <RichCard
+                                tag="Secondary user goal"
+                                title="Resourceful & Interactive Class"
+                                des="Users want a lecture to have easy access to rich resources and to offer interaction with students."
+                            />
+                        </div>
+                        <div className="flex-1">
+                            <RichCard
+                                tag="Tertiary user goal"
+                                title="Easy Material Distribution"
+                                des="Users wish ClassIn can offer an easy way to help organise and distribute course materials and assignments."
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-label="exploration section" className="mb-4 md:mb-56">
+                    <TextBlock
+                        sectionSubtitle="Design explore"
+                        sectionTitle="Exploring interactions"
+                        sectionDes="To align with users' goals and address issues in the initial ClassIn menu, we explored various restructuring options for the information architecture (IA), ultimately finalizing the version as below."
+                    />
+                    <ResponsiveImage
+                        imgSrc="/ripple-classinx-menu/explore-IA.png"
+                        alt="Description of the image"
+                        imgSize="42%"
+                    />
+                    <TextBlock
+                        sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
+                    />
+                    <div className="flex flex-col gap-4 my-16 w-full md:flex-row md:items-stretch">
+                        <div className="flex-1">
+                            <RichCard
+                                imgSrc="/ripple-classinx-menu/ripple.gif"
+                                imgAlt="A gif showcasing the concept of ripple"
+                                title="Direction 1 - Ripple"
+                                des="Ripple retains the circular design of the original menu but introduces more flexibility."
+                            />
+                        </div>
+                        <div className="flex-1">
+                            <RichCard
+                                imgSrc="/ripple-classinx-menu/toast.gif"
+                                imgAlt="A gif showcasing the concept of toast bar"
+                                title="Direction 2 - Toast bar"
+                                des="The Toast Bar adopts a grid layout, offering a scalable solution."
                             />
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import ProjectCaption from "@/app/Components/projectcaption";
-import TextBlock from "@/app/Components/textBlock";
+import ProjectCaption from "@/app/Components/project-caption";
+import TextBlock from "@/app/Components/text-block";
 
 export const metadata: Metadata = {
     title: "Rethinking PowerPoint Animation Experience",

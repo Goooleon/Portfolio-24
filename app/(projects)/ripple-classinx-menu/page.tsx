@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import Image from "next/image";
-import ProjectCaption from "@/app/Components/projectcaption";
-import TextBlock from "@/app/Components/textBlock";
-import RichCard from "@/app/Components/richcard";
-import ResponsiveImage from "@/app/Components/responsiveimage";
+import ProjectCaption from "@/app/Components/project-caption";
+import TextBlock from "@/app/Components/text-block";
+import RichCard from "@/app/Components/rich-card";
+import ResponsiveImage from "@/app/Components/responsive-image";
+import FeatureList from "@/app/Components/feature-list";
 
 export const metadata: Metadata = {
     title: "Ripple",
@@ -162,6 +162,29 @@ export default function Project() {
                             />
                         </div>
                     </div>
+                </div>
+
+                <div aria-label="design section" className="mb-4 md:mb-56">
+                    <TextBlock
+                        sectionSubtitle="Final design"
+                        sectionTitle="The refreshed menu that works like ripple"
+                    />
+                    <ResponsiveImage
+                        imgSrc="/ripple-classinx-menu/design-showcase.png"
+                        alt="Description of the image"
+                        imgSize="68"
+                    />
+                    <ResponsiveImage
+                        imgSrc="/ripple-classinx-menu/design-comparison.png"
+                        alt="Description of the image"
+                        imgSize="38"
+                    />
+                    <FeatureList
+                        mediaType="video"
+                        src="/ripple-classinx-menu/ripple-demo.mp4"
+                        title="Amazing Project"
+                        description="A brief description of the project goes here."
+                    />
                 </div>
             </div>
         </div>

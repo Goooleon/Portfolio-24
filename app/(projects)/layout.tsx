@@ -17,7 +17,7 @@ export default function ProjectDetailLayout({
   return (
     <div>
       <header>
-        <div className="z-10 flex font-mono justify-between p-4 md:px-64 md:py-24">
+        <div className="z-10 flex font-mono justify-between p-8 md:px-64 md:py-24">
           <div>
             <a
               className="pointer-events-none lg:pointer-events-auto lg:p-0"

@@ -35,7 +35,7 @@ export default function Project() {
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-design.png"
                         alt="Description of the image"
-                        imgSize="34%"
+                        imgSize="34"
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
@@ -43,7 +43,7 @@ export default function Project() {
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-IA.png"
                         alt="Description of the image"
-                        imgSize="43%"
+                        imgSize="43"
                     />
                 </div>
 
@@ -139,7 +139,7 @@ export default function Project() {
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/explore-IA.png"
                         alt="Description of the image"
-                        imgSize="42%"
+                        imgSize="42"
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."

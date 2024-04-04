@@ -16,7 +16,7 @@ const TextBlock: React.FC<TextBlockProps> = ({
             <div className="flex flex-col w-full md:w-9/12">
                 {sectionSubtitle && <h3>{sectionSubtitle}</h3>}
                 {sectionTitle && <h1 className="text-xl font-bold mt-2">{sectionTitle}</h1>}
-                {sectionSubtitle && <p className="mt-8">{sectionDes}</p>}
+                {sectionDes && <p className="mt-8">{sectionDes}</p>}
             </div>
         </div>
     );

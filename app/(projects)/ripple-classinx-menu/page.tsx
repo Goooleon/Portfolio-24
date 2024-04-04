@@ -200,6 +200,44 @@ export default function Project() {
                         description="The menu dynamically expands and contracts around a central circle, contextually displaying and hiding actions as needed."
                         swap={true}
                     />
+
+                    <div aria-label="impact section" className="mb-4 md:mb-24">
+                        <TextBlock
+                            sectionSubtitle="Project result"
+                            sectionTitle="Redesign gains a positive impact"
+                            sectionDes="The result of the menu refresh was remarkable in monitored feedback channels and usability testing with users."
+                        />
+                        <div className="flex flex-col gap-4 my-16 w-full md:flex-row md:items-stretch">
+                            <div className="flex-1">
+                                <RichCard
+                                    title="~20% ↓"
+                                    titleClassName='text-red-600 text-center'
+                                    des="Complaint decreased in all monitored feedback channels"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <RichCard
+                                    title="~10% ↓"
+                                    titleClassName='text-red-600 text-center'
+                                    des="Average task time reduced in usability testing"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <RichCard
+                                    title="~15% ↑ and test"
+                                    titleClassName='text-green-700 text-center'
+                                    des="Task completion rate increased in usability testing"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div aria-label="reflection section" className="mb-4 md:mb-24">
+                    <TextBlock
+                            sectionTitle="Redesign gains a positive impact"
+                            sectionDes="The result of the menu refresh was remarkable in monitored feedback channels and usability testing with users."
+                        />
+                    </div>
                 </div>
             </div>
         </div>

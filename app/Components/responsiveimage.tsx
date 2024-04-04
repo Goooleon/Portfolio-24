@@ -8,26 +8,28 @@ type ResponsiveImageProps = {
     alt: string;
 };
 
-const ResponsiveImage: React.FC<ResponsiveImageProps> = ({ 
+const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
     imgSrc,
     imgSize,
     alt,
 }) => {
-    const containerClass = classNames('my-16 w-full relative rounded-2xl overflow-hidden', {
+    const containerClass = classNames({
         [`pt-[${imgSize}]`]: imgSize,
-      });
+    });
     return (
-        <div className={containerClass}>
-        <Image
-            src={imgSrc}
-            alt={alt}
-            quality={100}
-            sizes="100vw"
-            fill
-            loading='lazy'
-            objectFit="cover"
-        />
-    </div>
+        <div className="my-16 w-full relative rounded-2xl overflow-hidden">
+            <div className={containerClass}>
+                <Image
+                    src={imgSrc}
+                    alt={alt}
+                    quality={100}
+                    sizes="100vw"
+                    fill
+                    loading='lazy'
+                    objectFit="cover"
+                />
+            </div>
+        </div>
     );
 };
 

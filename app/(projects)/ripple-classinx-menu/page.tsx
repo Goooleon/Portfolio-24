@@ -4,6 +4,7 @@ import TextBlock from "@/app/Components/text-block";
 import RichCard from "@/app/Components/rich-card";
 import ResponsiveImage from "@/app/Components/responsive-image";
 import FeatureList from "@/app/Components/feature-list";
+import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
     title: "Ripple",
@@ -234,8 +235,17 @@ export default function Project() {
 
                     <div aria-label="reflection section" className="mb-4 md:mb-24">
                     <TextBlock
-                            sectionTitle="Redesign gains a positive impact"
-                            sectionDes="The result of the menu refresh was remarkable in monitored feedback channels and usability testing with users."
+                            sectionTitle="Reflection & Envision"
+                            sectionDes="The circular layout, while unique, does not easily accommodate additional features, necessitating customizable options for diverse use cases. Moreover, refining gesture-based interactions with the menu is crucial to enhancing overall efficiency."
+                        />
+                    </div>
+
+                    <div aria-label="external links" className="mb-4 md:mb-24">
+                        <ExternalLink 
+                            title="ClassIn: One Stop Learning Solution"
+                            url="https://www.classin.com/hybrid_learning/"
+                            favicon="/ripple-classinx-menu/web-thumbnail.png"
+                            alt="favicon"
                         />
                     </div>
                 </div>

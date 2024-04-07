@@ -26,7 +26,7 @@ export default function Project() {
 
             />
 
-            <div className="max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b dark:border-neutral-200 dark:border-neutral-800 p-8 md:px-56 md:py-56 md:mx-8">
+            <div className="max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b border-neutral-200 dark:border-neutral-800 p-8 md:px-56 md:py-32 md:mx-8">
                 <div aria-label="introduction section" className="mt-4">
                     <TextBlock
                         sectionSubtitle="Background"

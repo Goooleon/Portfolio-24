@@ -42,7 +42,7 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
                         priority
                     />
                 </div>
-                <ul className="gap-8 justify-between w-full p-4 py-8 md:px-64 md:py-32 md:flex md:gap-16" >
+                <ul className="gap-8 justify-between w-full p-4 py-8 md:px-64 md:py-24 md:flex md:gap-16" >
                     <li className="p-4">
                         <h3 className="font-bold text-xl">Role</h3>
                         <p>{role}</p>

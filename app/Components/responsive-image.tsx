@@ -20,7 +20,7 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
     return (
         <div 
           style={containerStyle} 
-          className="my-16 w-full relative rounded-2xl overflow-hidden h-0"> 
+          className="w-full relative rounded-2xl overflow-hidden h-0"> 
             {/* Apply inline style for dynamic padding-top. Adding h-0 to ensure the container's height is controlled by padding */}
             <Image
                 src={imgSrc}

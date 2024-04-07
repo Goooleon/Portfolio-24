@@ -26,8 +26,8 @@ export default function Project() {
 
             />
 
-            <div className="max-w-screen-2xl w-full rounded-2xl border-t border-zinc-800 p-4 py-12 md:px-64 md:py-24">
-                <div aria-label="introduction section" className="mb-4 md:mb-56">
+            <div className="max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b dark:border-neutral-200 dark:border-neutral-800 p-8 md:px-56 md:py-56 md:mx-8">
+                <div aria-label="introduction section" className="mt-4">
                     <TextBlock
                         sectionSubtitle="Background"
                         sectionTitle="The initial ClassIn X menu"
@@ -41,14 +41,14 @@ export default function Project() {
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
                     />
-                    <ResponsiveImage
+                    <ResponsiveImage    
                         imgSrc="/ripple-classinx-menu/bg-old-IA.png"
                         alt="Description of the image"
                         imgSize="43"
                     />
                 </div>
 
-                <div aria-label="problem-section" className="mb-4 md:mb-24">
+                <div aria-label="problem-section" className="mt-4 md:mt-56">
                     <TextBlock
                         sectionSubtitle="Experience pain points"
                         sectionTitle="Key experience problems"
@@ -79,7 +79,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div aria-label="research section" className="mb-4 md:mb-24">
+                <div aria-label="research section" className="mt-4 md:mt-56">
                     <TextBlock
                         sectionSubtitle="User Research"
                         sectionTitle="Immersion with real users"
@@ -131,7 +131,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div aria-label="exploration section" className="mb-4 md:mb-56">
+                <div aria-label="exploration section" className="mt-4 md:mt-56">
                     <TextBlock
                         sectionSubtitle="Design explore"
                         sectionTitle="Exploring interactions"
@@ -165,7 +165,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div aria-label="design section" className="mb-4 md:mb-56">
+                <div aria-label="design section" className="mt-4 md:mt-56">
                     <TextBlock
                         sectionSubtitle="Final design"
                         sectionTitle="The refreshed menu that works like ripple"
@@ -202,7 +202,7 @@ export default function Project() {
                         swap={true}
                     />
 
-                    <div aria-label="impact section" className="mb-4 md:mb-24">
+                    <div aria-label="impact section" className="mt-4 md:mt-56">
                         <TextBlock
                             sectionSubtitle="Project result"
                             sectionTitle="Redesign gains a positive impact"
@@ -233,14 +233,14 @@ export default function Project() {
                         </div>
                     </div>
 
-                    <div aria-label="reflection section" className="mb-4 md:mb-24">
+                    <div aria-label="reflection section" className="mt-4 md:mt-56">
                     <TextBlock
                             sectionTitle="Reflection & Envision"
                             sectionDes="The circular layout, while unique, does not easily accommodate additional features, necessitating customizable options for diverse use cases. Moreover, refining gesture-based interactions with the menu is crucial to enhancing overall efficiency."
                         />
                     </div>
 
-                    <div aria-label="external links" className="mb-4 md:mb-24">
+                    <div aria-label="external links" className="mt-4 md:mt-56">
                         <ExternalLink 
                             title="ClassIn: One Stop Learning Solution"
                             url="https://www.classin.com/hybrid_learning/"

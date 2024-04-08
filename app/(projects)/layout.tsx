@@ -35,7 +35,7 @@ export default function ProjectDetailLayout({
               />
             </a>
           </div>
-          <ul className="flex gap-2">
+          <ul className="flex gap-2 md:gap-4">
             <li>
               <MyButton
                 label="Previous"

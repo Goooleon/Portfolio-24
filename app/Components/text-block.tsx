@@ -4,19 +4,21 @@ type TextBlockProps = {
     sectionSubtitle?: string;
     sectionTitle?: string;
     sectionDes?: string;
+    mouduleClassName?: string;
 };
 
 const TextBlock: React.FC<TextBlockProps> = ({
     sectionSubtitle,
     sectionTitle,
     sectionDes,
+    mouduleClassName = "mb-12",
 }) => {
     return (
         <div>
-            <div className="flex flex-col mb-12 w-full md:w-9/12">
-                {sectionSubtitle && <h3>{sectionSubtitle}</h3>}
-                {sectionTitle && <h1 className="text-xl font-bold mt-2">{sectionTitle}</h1>}
-                {sectionDes && <p className="mt-6">{sectionDes}</p>}
+            <div className={`flex flex-col md:w-9/12 w-full ${mouduleClassName}`}>
+                {sectionSubtitle && <h3 className="uppercase opacity-50 tracking-wider font-medium">{sectionSubtitle}</h3>}
+                {sectionTitle && <h1 className="text-2xl font-bold mt-2 text-neutral-950 dark:text-white">{sectionTitle}</h1>}
+                {sectionDes && <p className="text-lg mt-6">{sectionDes}</p>}
             </div>
         </div>
     );

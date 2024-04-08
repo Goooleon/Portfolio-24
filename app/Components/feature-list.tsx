@@ -10,6 +10,7 @@ type FeatureListProps = {
   description: string;
   alt?: string;
   swap?: boolean; // Determine the order of media and text
+  moduleClassName?: string;
 };
 
 const FeatureList: React.FC<FeatureListProps> = ({
@@ -19,6 +20,7 @@ const FeatureList: React.FC<FeatureListProps> = ({
   description,
   alt = '',
   swap = false,
+  moduleClassName,
 }) => {
   const mediaRef = useRef<HTMLVideoElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -46,14 +48,14 @@ const FeatureList: React.FC<FeatureListProps> = ({
   const layoutClass = swap ? 'md:flex-row-reverse' : 'md:flex-row';
 
   return (
-    <div className={`flex flex-col my-8 w-full md:items-start ${layoutClass}`}>
+    <div className={`flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
       <div className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
         {/* Media content */}
         {mediaType === 'image' ? (
                       <Image
                       src={src}
                       alt={alt}
-                      fill // Use 'fill' to ensure the image fills the padded container
+                      fill
                       objectFit="cover"
                       quality={100}
                       sizes="100vw"
@@ -71,8 +73,8 @@ const FeatureList: React.FC<FeatureListProps> = ({
           />
         )}
       </div>
-      <div className="w-full md:w-1/2 px-4 md:px-8 py-4">
-        <h2 className="text-xl font-bold">{title}</h2>
+      <div className="w-full md:w-1/2 py-4 px-2">
+        <h2 className="text-lg font-bold text-neutral-950 dark:text-white">{title}</h2>
         <p className="mt-2">{description}</p>
       </div>
     </div>

@@ -16,20 +16,20 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
 }) => {
     return (
         <div>
-            <a href={url} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center w-full gap-4 p-4 md:p8 rounded-2xl bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+            <a href={url} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center w-full gap-4 p-4 md:p-8 rounded-2xl bg-white dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800">
                     <div className="flex-none">
                     <Image
                         src={favicon}
-                        width={52} // Fixed width
-                        height={52} // Fixed height
+                        width={52}
+                        height={52}
                         objectFit="cover"
                         alt={alt}
-                        className="rounded-md"
+                        className="rounded-md border border-neutral-100"
                     />
                     </div>
                     <div className="min-w-0 flex-grow">
-                        <h2 className="text-lg truncate text-ellipsis">{title}</h2>
-                        <p className="text-sm text-neutral-400 truncate text-ellipsis">{url}</p>
+                        <h2 className="text-neutral-950 dark:text-white text-lg font-bold truncate text-ellipsis">{title}</h2>
+                        <p className="text-md opacity-50 truncate text-ellipsis">{url}</p>
                     </div>
                 <div className="flex-none ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-none fill-neutral-600 dark:fill-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

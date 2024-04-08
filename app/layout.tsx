@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <footer className="p-8 md:px-64 md:py-16 grid">
-          <p>goooleon@gmail.com • <a href="https://www.instagram.com/guforgood/">Instagram</a> • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/">LinkedIn</a> </p>
-          <p>Made 🖖🏽by ©Gü 2023-2024</p></footer>
+        <footer className="px-8 py-12 md:px-64 md:py-24 grid">
+          <p className="dark:text-white">{'goooleon(at)gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/">LinkedIn</a> </p>
+          <p>Made 🖖🏽by <span className="dark:text-white">©Gü</span> 2023-2024</p></footer>
       </body>
     </html>
   );

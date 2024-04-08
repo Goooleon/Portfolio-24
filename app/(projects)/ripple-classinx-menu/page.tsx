@@ -26,7 +26,7 @@ export default function Project() {
 
             />
 
-            <div className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-32 md:px-56 md:mx-8">
+            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-32 md:px-56 md:mx-8">
                 <div aria-label="background section">
                     <TextBlock
                         sectionSubtitle="Background"
@@ -40,7 +40,7 @@ export default function Project() {
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
-                        mouduleClassName="mb-12 mt-8 md:mt-16"
+                        moduleClassName="mb-12 mt-8 md:mt-16"
                     />
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-IA.png"
@@ -115,7 +115,7 @@ export default function Project() {
                     </div>
                     <TextBlock
                         sectionDes="By synthesizing the research findings, we discovered that user goals fall into three categories, closely mirroring the stages of a traditional lecture process."
-                        mouduleClassName="mb-12 mt-8 md:mt-16"
+                        moduleClassName="mb-12 mt-8 md:mt-16"
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
                         <div className="flex-1">
@@ -164,7 +164,7 @@ export default function Project() {
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
-                        mouduleClassName="mt-8 md:mt-16"
+                        moduleClassName="mt-8 md:mt-16"
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
                         <div className="flex-1">
@@ -266,7 +266,7 @@ export default function Project() {
                     <TextBlock
                         sectionTitle="Reflection & Envision"
                         sectionDes="The circular layout, while unique, does not easily accommodate additional features, necessitating customizable options for diverse use cases. Moreover, refining gesture-based interactions with the menu is crucial to enhancing overall efficiency."
-                        mouduleClassName="mb-0"
+                        moduleClassName="mb-0"
                     />
                 </div>
 

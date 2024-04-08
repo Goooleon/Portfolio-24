@@ -1,21 +1,30 @@
+'use client'
+
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 type TextBlockProps = {
     sectionSubtitle?: string;
     sectionTitle?: string;
     sectionDes?: string;
-    mouduleClassName?: string;
+    moduleClassName?: string;
 };
 
 const TextBlock: React.FC<TextBlockProps> = ({
     sectionSubtitle,
     sectionTitle,
     sectionDes,
-    mouduleClassName = "mb-12",
+    moduleClassName = "mb-12",
 }) => {
+    // Set up the hook to monitor when the component comes into view
+    const { ref, inView } = useInView({
+        triggerOnce: true, // The animation will only play once
+        threshold: 0.1, // Trigger when 10% of the component is visible
+    });
+
     return (
-        <div>
-            <div className={`flex flex-col md:w-9/12 w-full ${mouduleClassName}`}>
+        <div ref={ref} className={`transition-opacity duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`flex flex-col md:w-9/12 w-full ${moduleClassName}`}>
                 {sectionSubtitle && <h3 className="uppercase opacity-50 tracking-wider font-medium">{sectionSubtitle}</h3>}
                 {sectionTitle && <h1 className="text-2xl font-bold mt-2 text-neutral-950 dark:text-white">{sectionTitle}</h1>}
                 {sectionDes && <p className="text-lg mt-6">{sectionDes}</p>}

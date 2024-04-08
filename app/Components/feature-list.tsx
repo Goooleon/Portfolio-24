@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
 
 type FeatureListProps = {
   mediaType: 'image' | 'video';
@@ -23,44 +24,38 @@ const FeatureList: React.FC<FeatureListProps> = ({
   moduleClassName,
 }) => {
   const mediaRef = useRef<HTMLVideoElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+
+  // Use useInView hook to detect when the component is visible
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.5, // Trigger when 50% of the component is visible
+  });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsVisible(entry.isIntersecting);
-      if (entry.isIntersecting && mediaType === 'video' && mediaRef.current) {
-        mediaRef.current.play();
-      }
-    }, { threshold: 0.5 });
-
-    if (mediaRef.current) {
-      observer.observe(mediaRef.current);
+    // Play video if it's in view and the media type is video
+    if (inView && mediaType === 'video' && mediaRef.current) {
+      mediaRef.current.play();
     }
+  }, [inView, mediaType]);
 
-    return () => {
-      if (mediaRef.current) {
-        observer.unobserve(mediaRef.current);
-      }
-    };
-  }, [mediaType]);
-
-  // Adjust the layout based on the `swap` prop
   const layoutClass = swap ? 'md:flex-row-reverse' : 'md:flex-row';
 
+  // Apply transition effects based on inView status
+  const animationClass = `transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`;
+
   return (
-    <div className={`flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
+    <div ref={ref} className={`${animationClass} flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
       <div className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
-        {/* Media content */}
         {mediaType === 'image' ? (
-                      <Image
-                      src={src}
-                      alt={alt}
-                      fill
-                      objectFit="cover"
-                      quality={100}
-                      sizes="100vw"
-                      loading='lazy'
-                  />
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            objectFit="cover"
+            quality={100}
+            sizes="100vw"
+            loading='lazy'
+          />
         ) : (
           <video
             ref={mediaRef}
@@ -68,7 +63,7 @@ const FeatureList: React.FC<FeatureListProps> = ({
             muted
             loop
             playsInline
-            autoPlay={isVisible}
+            autoPlay={inView}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         )}

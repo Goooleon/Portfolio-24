@@ -40,7 +40,7 @@ export default function Project() {
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
-                        moduleClassName="mb-12 mt-8 md:mt-16"
+                        moduleClassName="mt-8 md:mt-16 mb-12"
                     />
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/bg-old-IA.png"

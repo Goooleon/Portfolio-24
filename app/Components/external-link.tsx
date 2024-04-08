@@ -29,7 +29,7 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
                     </div>
                     <div className="min-w-0 flex-grow">
                         <h2 className="text-neutral-950 dark:text-white text-lg font-bold truncate text-ellipsis">{title}</h2>
-                        <p className="text-md opacity-50 truncate text-ellipsis">{url}</p>
+                        <p className="text-md opacity-60 truncate text-ellipsis">{url}</p>
                     </div>
                 <div className="flex-none ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-none fill-neutral-600 dark:fill-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

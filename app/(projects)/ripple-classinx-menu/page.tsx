@@ -164,7 +164,7 @@ export default function Project() {
                     />
                     <TextBlock
                         sectionDes="The menu by default displays 18 feature icons, arranged clockwise from the inner to the outer ring without an apparent logic to their placement."
-                        moduleClassName="mt-8 md:mt-16"
+                        moduleClassName="mb-12 mt-8 md:mt-16"
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
                         <div className="flex-1">

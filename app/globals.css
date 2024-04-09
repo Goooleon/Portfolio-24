@@ -4,21 +4,39 @@
 
 :root {
   --foreground-rgb: 68, 68, 68;
+  --title-color: 10, 10, 10;
   --background-start-rgb: 243, 246, 251;
   --background-end-rgb: 255, 255, 255;
 }
 
+.opposite-theme {
+  color: rgb(163, 163, 163);
+  --title-color: 245, 245, 245;
+  background-color: rgb(10, 10, 10); 
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 163, 163, 163;
+    --title-color: 255, 255, 255;
     --background-start-rgb: 0, 0, 20;
     --background-end-rgb: 0, 0, 0;
+  }
+  .opposite-theme {
+    color: rgb(68, 68, 68);
+    --title-color: 10, 10, 10;
+    background-color: rgb(245, 245, 245); 
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-end-rgb));
+}
+
+.title-color {
+  color: rgb(var(--title-color))
 }
 
 @layer utilities {

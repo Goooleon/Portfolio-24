@@ -20,8 +20,8 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <footer className="px-8 py-12 md:px-64 md:py-24 grid">
-          <p className="dark:text-white">{'goooleon(at)gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/">LinkedIn</a> </p>
-          <p>Made 🖖🏽by <span className="dark:text-white">©Gü</span> 2023-2024</p></footer>
+          <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/">LinkedIn</a> </p>
+          <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2023-2024</p></footer>
       </body>
     </html>
   );

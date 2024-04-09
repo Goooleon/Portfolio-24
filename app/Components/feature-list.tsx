@@ -45,17 +45,18 @@ const FeatureList: React.FC<FeatureListProps> = ({
 
   return (
     <div ref={ref} className={`${animationClass} flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
-      <div className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
+      <div
+        className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
         {mediaType === 'image' ? (
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            objectFit="cover"
-            quality={100}
-            sizes="100vw"
-            loading='lazy'
-          />
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              objectFit="cover"
+              quality={100}
+              sizes="100vw"
+              loading='lazy'
+            />
         ) : (
           <video
             ref={mediaRef}
@@ -69,7 +70,7 @@ const FeatureList: React.FC<FeatureListProps> = ({
         )}
       </div>
       <div className="w-full md:w-1/2 py-4 px-2">
-        <h2 className="text-lg font-bold text-neutral-950 dark:text-white">{title}</h2>
+        <h2 className="text-lg font-bold title-color">{title}</h2>
         <p className="mt-2">{description}</p>
       </div>
     </div>

@@ -50,16 +50,16 @@ export default function Home() {
             Follow on Edge
           </Link></li>
           <li className="p-4"><Link href="/grad-thesis-myt-search">
-            Improving Search Relevance Feedback through Human Centered Design
+            Improving Search Relevance Feedback through Human Centered Design <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/joa-arch-web">
-            JOA website revamp
+            JOA website revamp <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/rethink-ppt-animation">
-            Rethinking PowerPoint Animation Experience
+            Rethinking PowerPoint Animation Experience <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/ripple-classinx-menu">
-            Ripple - a refreshed ClassIn X menu
+            Ripple - a refreshed ClassIn X menu <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/uxad-saeco-redesign">
             Saeco Xelsis Experience Redesign
@@ -96,28 +96,6 @@ export default function Home() {
             Just a little more, more personal, not about work or profession.
           </p>
         </article>
-      </div>
-
-      <div className="m-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-30">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-
-
       </div>
     </main>
   );

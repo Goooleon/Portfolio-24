@@ -89,7 +89,7 @@ export default function Project() {
                         sectionTitle={`Understanding Healthcare Professionals`}
                         sectionDes={
                             <>
-                                {`Literature reviews, expert interviews, and role-playing sessions were conducted to gather healthcare professionals'`} <span className="font-semibold text-neutral-950 dark:text-white">expectations</span> {`for myTomorrows Search, their`} <span className="font-semibold text-neutral-950 dark:text-white">altitude</span> {`towards providing feedback, and identify`} <span className="font-semibold text-neutral-950 dark:text-white">key factors</span> {`influencing their relevance feedback.`}
+                                {`Literature reviews, expert interviews, and role-playing sessions were conducted to gather healthcare professionals'`} <span className="font-semibold text-neutral-950 dark:text-white">expectations</span> {`for myTomorrows Search, their`} <span className="font-semibold text-neutral-950 dark:text-white">attitude</span> {`towards providing feedback, and identify`} <span className="font-semibold text-neutral-950 dark:text-white">key factors</span> {`influencing their relevance feedback.`}
                             </>
                         }
                     />

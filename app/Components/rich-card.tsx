@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 type RichCardProps = {
     tag?: string;
     title: string;
-    des?: string;
+    des?: string | JSX.Element;
     imgSrc?: string;
     imgAlt?: string;
     titleClassName?: string;

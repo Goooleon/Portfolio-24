@@ -3,7 +3,6 @@ import ProjectCaption from "@/app/Components/project-caption";
 import TextBlock from "@/app/Components/text-block";
 import RichCard from "@/app/Components/rich-card";
 import ResponsiveImage from "@/app/Components/responsive-image";
-import FeatureList from "@/app/Components/feature-list";
 import ExternalLink from "@/app/Components/external-link";
 
 

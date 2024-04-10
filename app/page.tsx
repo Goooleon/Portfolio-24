@@ -19,7 +19,7 @@ export default function Home() {
             a free soul who enjoys <span aria-label="skiing">🎿</span> <span aria-label="frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
           </p>
         </article>
-        <DownloadButton 
+        <DownloadButton
           label='More About Me'
         />
       </div>
@@ -62,7 +62,7 @@ export default function Home() {
             Ripple - a refreshed ClassIn X menu <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/uxad-saeco-redesign">
-            Saeco Xelsis Experience Redesign
+            Saeco Xelsis Experience Redesign <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
         </ul>
       </div>
@@ -70,12 +70,13 @@ export default function Home() {
       <div className="m-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
         <article>
           <h1 className={`mb-4 text-3xl font-bold`}>why design?</h1>
-          <p className="text-xl opacity-50"> I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.
+          <p className="text-xl opacity-50">
+            {`I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.`}
             < br /> <br />
-            I devote myself to creating (functional) useful and/or (emotional) enjoyable experiences that I call it meaningful moments.
+            {`I devote myself to creating (functional) useful and/or (emotional) enjoyable experiences that I call it meaningful moments.`}
           </p>
         </article>
-        <DownloadButton 
+        <DownloadButton
           label='Resume.pdf'
         />
       </div>
@@ -84,7 +85,7 @@ export default function Home() {
         <article>
           <h1 className={`mb-4 text-3xl font-bold`}>Gü vs Gu</h1>
           <p className="text-xl opacity-50">
-            Gu is my family name, and I am simply used to it. The Umlaut is to make u a S-M-I-L-E-Y FACE :)
+            {`Gu is my family name, and I am simply used to it. The Umlaut is to make u a S-M-I-L-E-Y FACE :)`}
           </p>
         </article>
       </div>
@@ -93,7 +94,7 @@ export default function Home() {
         <article>
           <h1 className={`mb-4 text-3xl font-bold`}>a little more</h1>
           <p className="text-xl opacity-50">
-            Just a little more, more personal, not about work or profession.
+            {`Just a little more, more personal, not about work or profession.`}
           </p>
         </article>
       </div>

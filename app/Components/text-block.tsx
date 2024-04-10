@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 type TextBlockProps = {
     sectionSubtitle?: string;
     sectionTitle?: string;
-    sectionDes?: string | JSX.Element; // Allow both strings and JSX.Element
+    sectionDes?: string | JSX.Element;
     moduleClassName?: string;
 };
 

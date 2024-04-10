@@ -56,12 +56,12 @@ export default function Home() {
             JOA website revamp <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
           <li className="p-4"><Link href="/rethink-ppt-animation">
-            Rethinking PowerPoint Animation Experience <span className="font-bold text-green-500">{`(Done)`}</span>
+            Rethinking PowerPoint Animation Experience
           </Link></li>
           <li className="p-4"><Link href="/ripple-classinx-menu">
             Ripple - a refreshed ClassIn X menu <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
-          <li className="p-4"><Link href="/uxad-saeco-redesign">
+          <li className="p-4"><Link href="/uxad-saeco">
             Saeco Xelsis Experience Redesign <span className="font-bold text-green-500">{`(Done)`}</span>
           </Link></li>
         </ul>

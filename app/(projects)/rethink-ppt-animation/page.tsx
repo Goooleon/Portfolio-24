@@ -116,7 +116,7 @@ export default function Project() {
                         title={`Contextual Menu`}
                         description={`The contextual animation menu enables users to swiftly customize pre-set animations for immediate adjustments.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-16"
+                        moduleClassName="mt-8 md:mt-28"
                     />
                     <FeatureList
                         mediaType="image"
@@ -124,7 +124,7 @@ export default function Project() {
                         title={`Side Pane`}
                         description={`The side pane offers advanced animation options for crafting more complex animations, including the construction of animation structures, group editing, and beyond.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-16"
+                        moduleClassName="mt-8 md:mt-28"
                     />
                 </div>
 

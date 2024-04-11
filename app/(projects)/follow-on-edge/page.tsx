@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import ProjectCaption from "@/app/Components/project-caption";
 import TextBlock from "@/app/Components/text-block";
-import RichCard from "@/app/Components/rich-card";
 import ResponsiveImage from "@/app/Components/responsive-image";
 import FeatureList from "@/app/Components/feature-list";
 import ExternalLink from "@/app/Components/external-link";
@@ -45,9 +44,10 @@ export default function Project() {
                         imgSize="48"
                     />
                 </div>
+
                 <div aria-label="project goal section">
                     <TextBlock
-                        sectionSubtitle="Project goal"
+                        sectionSubtitle={`Project goal`}
                         sectionTitle={`Aggregated focus`}
                         sectionDes={`Microsoft Edge, a gateway to the web, is ideal for surfacing creators and aggregating user-interested content. It allows users to follow creators from websites being visited, creating an engagement loop for receiving updates and consumption. The MVP initially focuses on creators from YouTube, TikTok, and Pinterest.`}
                     />
@@ -57,15 +57,72 @@ export default function Project() {
                         imgSize="36.2"
                     />
                 </div>
+
                 <div aria-label="design showcase section">
                     <TextBlock
                         sectionSubtitle="Design showcase"
                         sectionTitle={`Follow on a browswer`}
                         sectionDes={`The Edge follow experience begins in the address bar and extends to the ‘Following’ side pane, allowing users to stay updated with content aggregated from across the web, all in one place.`}
                     />
-                    <ResponsiveVideo 
+                    <ResponsiveVideo
                         mediaType="video"
                         src="/follow-on-edge/design-demo.mp4"
+                    />
+                    <FeatureList
+                        mediaType="image"
+                        src="/follow-on-edge/design-entry.png"
+                        alt={`an image of showing the follow entry`}
+                        title={`Follow entry`}
+                        description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
+                        swap={true}
+                        moduleClassName="mt-8 md:mt-28"
+                    />
+                    <FeatureList
+                        mediaType="image"
+                        src="/follow-on-edge/design-pane.png"
+                        alt={`an image showing the follow confirmation pane`}
+                        title={`Follow confirmation`}
+                        description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
+                        swap={false}
+                        moduleClassName="mt-8 md:mt-28"
+                    />
+                    <FeatureList
+                        mediaType="image"
+                        src="/follow-on-edge/design-notification.png"
+                        alt={`an image of showing notification from Edge Follow`}
+                        title={`Re-engage notification`}
+                        description={`Edge sends daily notifications to re-engage users with new content. This aggressive design approach is intentional, but users are provided with control options to manage these notifications.`}
+                        swap={true}
+                        moduleClassName="mt-8 md:mt-28"
+                    />
+                    <ResponsiveImage
+                        imgSrc="/follow-on-edge/design-pages.png"
+                        alt={`an image showing key screens of Edge Follow`}
+                        imgSize="57.1"
+                        containerClassName="mt-8 md:mt-28"
+                    />
+                </div>
+
+                <div aria-label="reflection and envision section">
+                    <TextBlock
+                        sectionSubtitle={`The Challenge ahead`}
+                        sectionTitle={`Conflating same creators from various platforms`}
+                        sectionDes={
+                            <>
+                                {`In the MVP phase, each creator is treated as separate across different social media platforms, meaning the same creator on various sites appears as different creators in Follow on Edge.`}
+                                <br /><br />
+                                {`We plan to evolve the feature to link all channels of a creator together, making it scalable. The challenges ahead include: 1) exploring a method to combine a creator's details into a unified profile, and 2) figuring out a way to cohesively present content from various platforms within a single creator profile.`}
+                            </>
+                        }
+                    />
+                </div>
+
+                <div aria-label="reflection and envision section">
+                    <ExternalLink
+                        title={`Microsoft lets you follow YouTube creators in Edge browser test`}
+                        url="https://www.theverge.com/"
+                        favicon="/follow-on-edge/edge-follow-favicon.png"
+                        alt="favicon"
                     />
                 </div>
             </div>

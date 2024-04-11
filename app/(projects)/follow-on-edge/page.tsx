@@ -75,7 +75,7 @@ export default function Project() {
                         title={`Follow entry`}
                         description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="image"
@@ -84,7 +84,7 @@ export default function Project() {
                         title={`Follow confirmation`}
                         description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="image"
@@ -93,13 +93,13 @@ export default function Project() {
                         title={`Re-engage notification`}
                         description={`Edge sends daily notifications to re-engage users with new content. This aggressive design approach is intentional, but users are provided with control options to manage these notifications.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <ResponsiveImage
                         imgSrc="/follow-on-edge/design-pages.png"
                         alt={`an image showing key screens of Edge Follow`}
                         imgSize="57.1"
-                        containerClassName="mt-8 md:mt-28"
+                        containerClassName="mt-8 md:mt-32"
                     />
                 </div>
 

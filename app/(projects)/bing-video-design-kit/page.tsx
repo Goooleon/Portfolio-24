@@ -101,7 +101,7 @@ export default function Project() {
                         title={`Locked thumbnail ratios`}
                         description={`To preserve the original aspect ratio of video thumbnails, critical for user decision-making, the kit uses the "Ratios" Figma plugin, ensuring responsiveness across different viewport widths.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="image"
@@ -109,13 +109,13 @@ export default function Project() {
                         title={`Standardized grouping`}
                         description={`To enhance the usability of the design kit, we've standardized the grouping of design elements based on two principles: 1) prioritizing Auto Layout and 2) applying semantic naming to all layers.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <ResponsiveImage
                         imgSrc="/bing-video-design-kit/pages-kit.png"
                         alt="an overview of the design kit"
                         imgSize="71.6"
-                        containerClassName="mt-8 md:mt-28"
+                        containerClassName="mt-8 md:mt-32"
                     />
                 </div>
             </div>

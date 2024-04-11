@@ -229,7 +229,7 @@ export default function Project() {
                         title={`Get similar recommendations`}
                         description={`The 'Interested' bucket displays potentially high-relevance results for different queries. As more items are added to this bucket, increasingly better and more similar studies are recommended, expanding the search scope for users.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="image"
@@ -237,7 +237,7 @@ export default function Project() {
                         title={`Hide irrelevant one with tags`}
                         description={`The 'Not Interested' bucket holds results that don't directly meet users' informational needs. Users can add tags to specify reasons and opt to hide these results from their search outcomes.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                 </div>
             </div>

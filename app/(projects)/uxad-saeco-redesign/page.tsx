@@ -61,7 +61,7 @@ export default function Project() {
                         title={`Complex Coffee Brewing Process`}
                         description={`Brewing coffee requires navigating through several mandatory steps. Despite offering 4 to 5 customization options, users are obliged to complete 6 to 7 steps to brew their coffee with all desired customizations.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="video"
@@ -69,7 +69,7 @@ export default function Project() {
                         title={`Low Acceptance of Profile Feature`}
                         description={`The machine features a profile function designed to streamline coffee preparation to just 3 steps. However, because this function is isolated from the main customization process, it confuses users. As a result, they are reluctant to utilize the profile feature.`}
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="video"
@@ -77,7 +77,7 @@ export default function Project() {
                         title={`Unexpected Maintenance Alerts`}
                         description={`Maintenance prompts, such as adding water, can occur unexpectedly, even after the machine has begun grinding the beans. This disrupts the user experience and contradicts their expectations for coffee preparation.`}
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                 </div>
 

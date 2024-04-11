@@ -23,20 +23,26 @@ export default function Home() {
       </article>
 
       <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 grid-flow-row gap-2 px-4 max-w-screen-2xl my-8 md:my-0">
-        <div aria-label="item-1" className="row-span-2 col-span-2 bg-neutral-800 rounded-xl md:rounded-2xl">
-          01
+        <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+          <ProjectTile
+            link="/"
+            imgSrc="/copilot-cover.png"
+            imgSize="100"
+            alt="follow on edge cover image"
+            isLinkActive={false}
+          />
         </div>
 
-        <div aria-label="item-2" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-2" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/follow-on-edge"
             imgSrc="/follow-on-edge-cover.png"
-            imgSize="49"
+            imgSize="49.1"
             alt="follow on edge cover image"
           />
         </div>
 
-        <div aria-label="item-3" className="row-span-1 col-span-1 rounded-xl bg-neutral-100 dark:bg-neutral-700 md:rounded-2xl overflow-hidden">
+        <div aria-label="item-3" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/bing-video-design-kit"
             imgSrc="/bing-design-kit-cover.png"
@@ -45,7 +51,7 @@ export default function Home() {
           />
         </div>
 
-        <div aria-label="item-4" className="row-span-1 col-span-1 rounded-xl bg-neutral-100 dark:bg-neutral-700 md:rounded-2xl overflow-hidden">
+        <div aria-label="item-4" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
             imgSrc="/animation-cover.gif"
@@ -55,15 +61,15 @@ export default function Home() {
           />
         </div>
 
-        <div aria-label="item-5" className="row-span-1 col-span-1 rounded-xl bg-neutral-100 dark:bg-neutral-700 md:rounded-2xl overflow-hidden">
+        <div aria-label="item-5" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
-            link="/"
+            link="https://vimeo.com/482577130?share=copy"
             imgSrc="/50s-cover.png"
             imgSize="100"
             alt="one day in the 50s movie cover image"
           />
         </div>
-        <div aria-label="item-6" className="row-span-1 col-span-1 rounded-xl bg-neutral-100 dark:bg-neutral-700 md:rounded-2xl overflow-hidden">
+        <div aria-label="item-6" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/joa-arch-web"
             imgSrc="/joa-redesign-cover.png"
@@ -71,23 +77,23 @@ export default function Home() {
             alt="JOA architecture website redesign cover image"
           />
         </div>
-        <div aria-label="item-7" className="row-span-1 col-span-2 bg-neutral-100 dark:bg-neutral-700 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-7" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/ripple-classinx-menu"
             imgSrc="/ripple-classinx-cover.png"
-            imgSize="49"
+            imgSize="49.1"
             alt="ripple classinx menu cover image"
           />
         </div>
-        <div aria-label="item-8" className="row-span-1 col-span-2 bg-neutral-100 dark:bg-neutral-700 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-8" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/grad-thesis-myt-search"
             imgSrc="/grad-myt-search-cover.png"
-            imgSize="49"
+            imgSize="49.1"
             alt="master graduation thesis cover image"
           />
         </div>
-        <div aria-label="item-9" className="row-span-1 col-span-1 bg-neutral-100 dark:bg-neutral-700 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-9" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/uxad-saeco-redesign"
             imgSrc="/uxad-redesign-cover.png"
@@ -95,7 +101,7 @@ export default function Home() {
             alt="uxad saeco redesign cover image"
           />
         </div>
-        <div aria-label="item-10" className="row-span-1 col-span-1 bg-neutral-100 dark:bg-neutral-700 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-10" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
             imgSrc="/gu-surfing.png"
@@ -104,17 +110,17 @@ export default function Home() {
             isLinkActive={false} // Set this to false to disable the link
           />
         </div>
-        <div aria-label="item-11" className="row-span-1 col-span-2 bg-neutral-100 dark:bg-neutral-700 rounded-xl md:rounded-2xl overflow-hidden">
+        <div aria-label="item-11" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/rethink-ppt-animation"
             imgSrc="/ppt-animation-cover.png"
-            imgSize="49"
+            imgSize="49.1"
             alt="rethinking powerpoint animation cover image"
           />
         </div>
       </div>
 
-      <div className="p-8 md:px-64 md:py-32 my-8">
+      <div className="p-8 md:px-64 md:pt-40">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h1>
           <p className="text-xl">
@@ -124,11 +130,12 @@ export default function Home() {
           </p>
         </article>
         <DownloadButton
+
           label='Resume.pdf'
         />
       </div>
 
-      <div className="p-8 md:px-64 md:py-32 my-8">
+      <div className="p-8 md:px-64 md:py-40">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h1>
           <p className="text-xl">

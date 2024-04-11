@@ -208,7 +208,7 @@ export default function Project() {
                         title="Made for simplicity"
                         description="The Ripple menu for ClassIn X is made for simplicity and focus. The new design aims to assist users to complete key tasks with no distractions."
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="video"
@@ -216,7 +216,7 @@ export default function Project() {
                         title="Refreshed look for clarity"
                         description="The UI has been updated to better highlight the information hierarchy and enhance the discoverability of features."
                         swap={false}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                     <FeatureList
                         mediaType="video"
@@ -224,7 +224,7 @@ export default function Project() {
                         title="Enhanced affordance & interactions"
                         description="The menu dynamically expands and contracts around a central circle, contextually displaying and hiding actions as needed."
                         swap={true}
-                        moduleClassName="mt-8 md:mt-28"
+                        moduleClassName="mt-8 md:mt-32"
                     />
                 </div>
 

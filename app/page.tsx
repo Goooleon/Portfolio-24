@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DownloadButton from './Components/buttons';
 import ProjectTile from './Components/project-tile';
+import classNames from 'classnames';
 
 export default function Home() {
   return (
@@ -120,7 +121,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-8 md:px-64 md:pt-40">
+      <div aria-label="design mindset" className="px-8 py-16 md:px-64 md:pt-40">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h1>
           <p className="text-xl">
@@ -129,17 +130,28 @@ export default function Home() {
             {`I devote myself to creating (functional) useful and/or (emotional) enjoyable experiences that I call it meaningful moments.`}
           </p>
         </article>
-        <DownloadButton
 
-          label='Resume.pdf'
-        />
+        <div aria-label="resume button" className="mt-8">
+          <a href={`https://drive.google.com/file/d/1Ygk4orNzYfGMuE8dkFg0uowlP8iilBVB/view?usp=sharing`} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center w-fit gap-2 px-5 py-2.5 rounded-full bg-red-500 dark:bg-red-300 hover:bg-red-600 dark:hover:bg-red-200 duration-300 ease-in-out hover:scale-105">
+            <div className="min-w-0">
+              <h2 className="text-white dark:text-neutral-950 text-md font-bold truncate text-ellipsis">Résumé.pdf</h2>
+            </div>
+            <div className="flex-none">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 stroke-none fill-white dark:fill-neutral-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M6.24992 4.5C5.28344 4.5 4.49996 5.2835 4.49996 6.25V17.75C4.49996 18.7165 5.28344 19.5 6.24992 19.5H17.7496C18.7161 19.5 19.4996 18.7165 19.4996 17.75V13.75C19.4996 13.3358 19.8354 13 20.2496 13C20.6638 13 20.9995 13.3358 20.9995 13.75V17.75C20.9995 19.5449 19.5445 21 17.7496 21H6.24992C4.45504 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45504 3 6.24992 3H10.2498C10.664 3 10.9998 3.33579 10.9998 3.75C10.9998 4.16421 10.664 4.5 10.2498 4.5H6.24992ZM12.9998 3.75C12.9998 3.33579 13.3355 3 13.7497 3H20.25C20.6642 3 21 3.33579 21 3.75V10.25C21 10.6642 20.6642 11 20.25 11C19.8358 11 19.5 10.6642 19.5 10.25V5.56074L14.28 10.7804C13.9871 11.0732 13.5123 11.0732 13.2194 10.7803C12.9265 10.4874 12.9265 10.0125 13.2194 9.71964L18.4395 4.5H13.7497C13.3355 4.5 12.9998 4.16421 12.9998 3.75Z" />
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <div className="p-8 md:px-64 md:py-40">
+      <div aria-label="the origin of my gu with dots" className="px-8 py-16 md:px-64 md:py-40">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h1>
           <p className="text-xl">
-            {`Gu is my family name, and I am simply used to it. The Umlaut is to make u a S-M-I-L-E-Y FACE :)`}
+            {`Gu is my family name, and I am simply used to it. The Umlaut is to make u a `}
+            <span className="font-bold text-red-500 dark:text-red-300">S</span>-<span className="font-bold text-green-500 dark:text-green-300">M</span>-<span className="font-bold text-blue-500 dark:text-blue-300">I</span>-<span className="font-bold text-pink-500 dark:text-pink-300">L</span>-<span className="font-bold text-orange-500 dark:text-orange-300">E</span>-<span className="font-bold text-sky-500 dark:text-sky-300">Y</span>
+            {` FACE :)`}
           </p>
         </article>
       </div>

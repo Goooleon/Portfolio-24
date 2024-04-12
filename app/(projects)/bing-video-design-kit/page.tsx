@@ -64,7 +64,7 @@ export default function Project() {
                             imgSize="72.6"
                         />
                         <ResponsiveImage
-                            imgSrc="/bing-video-design-kit/copilot.png"
+                            imgSrc="/bing-video-design-kit/video-copilot.png"
                             alt="example of video in copilot"
                             imgSize="72.6"
                         />

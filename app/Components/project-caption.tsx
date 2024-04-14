@@ -39,6 +39,8 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
                         sizes="100vw"
                         fill
                         objectFit="cover"
+                        placeholder="blur"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOcfO3HfwAHxwNiegBRawAAAABJRU5ErkJggg=="
                         priority
                     />
                 </div>

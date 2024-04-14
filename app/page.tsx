@@ -6,7 +6,7 @@ import classNames from 'classnames';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col items-center justify-center md:max-w-screen-2xl mx-auto">
       <article aria-label="Introduction" className="p-8 md:px-64 md:py-32">
         <h1 className="mb-3 text-4xl font-bold mb-8 text-neutral-950 dark:text-white w-full md:w-9/12">
           <span role="img" aria-label="Waving Hand" className="mr-4">👋🏽</span>
@@ -23,7 +23,7 @@ export default function Home() {
         </p>
       </article>
 
-      <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 grid-flow-row gap-2 px-4 max-w-screen-2xl my-8 md:my-0">
+      <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 w-full max-w-full">
         <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div aria-label="design mindset" className="px-8 py-16 md:px-64 md:pt-40">
+      <div aria-label="design mindset" className="px-8 py-16 md:px-64 md:pt-40 w-full">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h1>
           <p className="text-xl">
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div aria-label="the origin of my gu with dots" className="px-8 py-16 md:px-64 md:py-40">
+      <div aria-label="the origin of my gu with dots" className="px-8 py-16 md:px-64 md:pt-40 w-full">
         <article className="w-full md:w-9/12">
           <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h1>
           <p className="text-xl">

@@ -25,7 +25,7 @@ export default function Project() {
 
             />
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-100 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
                 <div aria-label="video demo section">
                     <div className="pt-[57.36%] relative w-full h-full rounded-lg md:rounded-2xl overflow-hidden drop-shadow-2xl">
                         <iframe

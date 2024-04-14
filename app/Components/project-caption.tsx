@@ -31,7 +31,7 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
                         <p className="text-lg mt-8 md:mt-12">{projectDes}</p>
                     </div>
                 </div>
-                <div className="w-full relative pt-[60%] md:pt-[47.5%]">
+                <div className="w-full relative pt-[60%] md:pt-[47.5%] 2xl:rounded-2xl 2xl:overflow-hidden">
                     <Image
                         src={projectCover}
                         alt="cover image"

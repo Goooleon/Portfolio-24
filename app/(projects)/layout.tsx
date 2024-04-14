@@ -15,7 +15,7 @@ export default function ProjectDetailLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="md:max-w-screen-2xl mx-auto">
       <header>
         <div className="z-10 flex font-mono justify-between p-8 md:px-64 md:py-24">
           <div>

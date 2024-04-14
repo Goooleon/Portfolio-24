@@ -40,6 +40,7 @@ export default function Home() {
             imgSrc="/follow-on-edge-cover.png"
             imgSize="49.1"
             alt="follow on edge cover image"
+            overlayText={`Follow on Edge`}
           />
         </div>
 
@@ -49,6 +50,7 @@ export default function Home() {
             imgSrc="/bing-design-kit-cover.png"
             imgSize="100"
             alt="Bing video design kit cover image"
+            overlayText={`Bing Video Design Kit`}
           />
         </div>
 
@@ -68,6 +70,7 @@ export default function Home() {
             imgSrc="/50s-cover.png"
             imgSize="100"
             alt="one day in the 50s movie cover image"
+            overlayText={`One day in my 50's ↗️`}
           />
         </div>
         <div aria-label="item-6" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
@@ -76,6 +79,7 @@ export default function Home() {
             imgSrc="/joa-redesign-cover.png"
             imgSize="100"
             alt="JOA architecture website redesign cover image"
+            overlayText={`JOA Website Revamp`}
           />
         </div>
         <div aria-label="item-7" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
@@ -84,6 +88,7 @@ export default function Home() {
             imgSrc="/ripple-classinx-cover.png"
             imgSize="49.1"
             alt="ripple classinx menu cover image"
+            overlayText={`Ripple - a refreshed ClassIn X menu`}
           />
         </div>
         <div aria-label="item-8" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
@@ -92,6 +97,7 @@ export default function Home() {
             imgSrc="/grad-myt-search-cover.png"
             imgSize="49.1"
             alt="master graduation thesis cover image"
+            overlayText={`Master Thesis - myTomorrows Search`}
           />
         </div>
         <div aria-label="item-9" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
@@ -100,6 +106,7 @@ export default function Home() {
             imgSrc="/uxad-redesign-cover.png"
             imgSize="100"
             alt="uxad saeco redesign cover image"
+            overlayText={`Saeco Xelsis Experience Redesign`}
           />
         </div>
         <div aria-label="item-10" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
@@ -117,6 +124,7 @@ export default function Home() {
             imgSrc="/ppt-animation-cover.png"
             imgSize="49.1"
             alt="rethinking powerpoint animation cover image"
+            overlayText={`Rethinking PowerPoint Animation Experience`}
           />
         </div>
       </div>

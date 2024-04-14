@@ -9,30 +9,50 @@ type ProjectTileProps = {
     imgSrc: string;
     imgSize: string;
     alt: string;
-    link?: string; // Make 'link' optional
-    isLinkActive?: boolean; // New prop to control if the link should be active or not
+    link?: string;
+    isLinkActive?: boolean;
+    overlayText?: string; // Optional text for the overlay
 };
 
 const ProjectTile: React.FC<ProjectTileProps> = ({
     imgSrc,
     imgSize,
     alt,
-    link = '#', // Provide a default value for link
-    isLinkActive = true, // By default, the link is active
+    link = '#',
+    isLinkActive = true,
+    overlayText = "View More", // Default overlay text
 }) => {
-    // Set up the hook to monitor when the component comes into view
     const { ref, inView } = useInView({
-        triggerOnce: true, // The animation will only play once
-        threshold: 0.1, // Trigger when 10% of the component is visible
+        triggerOnce: true,
+        threshold: 0.1,
     });
 
     const containerStyle = {
-        paddingTop: imgSize ? `${imgSize}%` : '0%', // Dynamically set padding-top based on imgSize
+        paddingTop: imgSize ? `${imgSize}%` : '0%',
     };
 
-    // Conditionally render the Link component based on isLinkActive
-    const content = isLinkActive ? (
-        <Link href={link}>
+    return (
+        <div
+            ref={ref}
+            style={containerStyle}
+            className={`relative w-full overflow-hidden pt-[49%] h-0 transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            {isLinkActive ? (
+                <Link href={link} className="block">
+                    <div className="absolute inset-0 z-10 flex px-10 items-center justify-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <p className="text-white text-xl font-medium text-center">{overlayText}</p>
+                    </div>
+                    <Image
+                        src={imgSrc}
+                        alt={alt}
+                        fill
+                        objectFit="cover"
+                        quality={100}
+                        sizes="100vw"
+                        loading='lazy'
+                        className="transition duration-300 ease-out"
+                    />
+                </Link>
+            ) : (
                 <Image
                     src={imgSrc}
                     alt={alt}
@@ -41,26 +61,9 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
                     quality={100}
                     sizes="100vw"
                     loading='lazy'
+                    className="transition duration-300 ease-out"
                 />
-        </Link>
-    ) : (
-        <Image
-            src={imgSrc}
-            alt={alt}
-            fill
-            objectFit="cover"
-            quality={100}
-            sizes="100vw"
-            loading='lazy'
-        />
-    );
-
-    return (
-        <div
-            ref={ref}
-            style={containerStyle}
-            className={`w-full overflow-hidden pt-[49%] h-0 relative transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} `}>
-            {content}
+            )}
         </div>
     );
 };

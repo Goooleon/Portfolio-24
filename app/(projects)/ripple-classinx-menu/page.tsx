@@ -15,15 +15,14 @@ export default function Project() {
     return (
         <div>
             <ProjectCaption
-                projectTitle="Ripple - a refreshed ClassIn X menu"
-                projectDate="May-Jul, 2021"
-                projectDes="Ripple revitalizes ClassIn X's digital whiteboard by overhauling its menu to boost usability and modernize the interface. This enhancement aims to streamline presentations and interactions, providing a smoother, more intuitive experience for instructors and students alike."
+                projectTitle={`Ripple - a refreshed ClassIn X menu`}
+                projectDate={`May-Jul, 2021`}
+                projectDes={`Ripple revitalizes ClassIn X's digital whiteboard by overhauling its menu to boost usability and modernize the interface. This enhancement aims to streamline presentations and interactions, providing a smoother, more intuitive experience for instructors and students alike.`}
                 projectCover="/ripple-classinx-menu/cover.png"
-                role="Lead Interaction Designer"
-                platform="Windows-based Touchscreen
-                (110 inches)"
-                highlights="Shipped in 2021 with an issued design patent"
-
+                role={`Lead Interaction Designer`}
+                platform={`Windows-based Touchscreen (110 inches)`}
+                highlights={`Shipped in 2021 with an issued design patent`}
+                placeholderColor={`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMU/w8AATMBGApifZoAAAAASUVORK5CYII=`}
             />
 
             <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-100 dark:bg-neutral-950 rounded-2xl border-t border-b border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">

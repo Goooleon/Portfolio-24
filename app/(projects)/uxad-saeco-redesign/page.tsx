@@ -22,6 +22,7 @@ export default function Project() {
                 role={`Lead of interaction design and prototype (group of 5)`}
                 platform={`Touchscreen & IoT`}
                 highlights={`Inspired Philips' Saeco team for future improvements`}
+                placeholderColor={`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOM9bP/DwAD5QHrVaM9SAAAAABJRU5ErkJggg==`}
             />
 
             <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-100 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">

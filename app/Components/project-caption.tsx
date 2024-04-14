@@ -9,6 +9,7 @@ type ProjectCaptionProps = {
     role: string;
     platform: string;
     highlights: string;
+    placeholderColor: string;
 };
 
 const ProjectCaption: React.FC<ProjectCaptionProps> = ({
@@ -19,7 +20,7 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
     role,
     platform,
     highlights,
-
+    placeholderColor,
 }) => {
     return (
         <div className="flex flex-col h-full">
@@ -40,7 +41,7 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
                         fill
                         objectFit="cover"
                         placeholder="blur"
-                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOcfO3HfwAHxwNiegBRawAAAABJRU5ErkJggg=="
+                        blurDataURL={placeholderColor}
                         priority
                     />
                 </div>

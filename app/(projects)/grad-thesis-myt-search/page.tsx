@@ -17,7 +17,7 @@ export default function Project() {
             <ProjectCaption
                 projectTitle={`Improving Search Relevance Feedback through Human Centered Design`}
                 projectDate={`Jan - Aug, 2020`}
-                projectDes={`The Master Thesis investigates methods to prompt healthcare professionals to provide Explicit Relevance Feedback on search outcomes, like Clinical Trials and Expanded Access Programs, enhancing search quality and efficiency. Employing a research-through-design approach, the thesis intends to formulate a guideline for designing explicit feedback collection in search systems, suitable for platforms such as myTomorrows and beyond.`}
+                projectDes={`The Master Thesis investigates methods to prompt healthcare professionals to provide Explicit Relevance Feedback on search outcomes to enhance search quality and efficiency. Employing a research-through-design approach, the project intends to formulate a guideline for designing explicit feedback collection in search systems, suitable for platforms such as myTomorrows and beyond.`}
                 projectCover="/grad-thesis-myt-search/cover.png"
                 role={`Graduate Intern (Research & Design)`}
                 platform={`Web`}

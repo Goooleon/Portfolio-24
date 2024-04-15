@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import MyButton from "../Components/buttons";
 
 export const metadata: Metadata = {
@@ -19,21 +20,16 @@ export default function ProjectDetailLayout({
       <header>
         <div className="z-10 flex font-mono justify-between p-8 md:px-64 md:py-24">
           <div>
-            <a
-              className="pointer-events-none lg:pointer-events-auto lg:p-0"
-              href="/"
-              target="_self"
-              rel="noopener noreferrer"
-            >
+          <Link href="/">
               <Image
                 src="/Gu-LOGO.svg"
                 alt="Vercel Logo"
-                className="dark:invert"
+                className="dark:invert hover:-translate-y-1 hover:skew-y-3 duration-300 ease-in-out"
                 width={60}
                 height={24}
                 priority
               />
-            </a>
+            </Link>
           </div>
           <ul className="flex gap-2 md:gap-4">
             <li>

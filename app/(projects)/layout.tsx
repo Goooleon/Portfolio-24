@@ -20,7 +20,7 @@ export default function ProjectDetailLayout({
       <header>
         <div className="z-10 flex font-mono justify-between p-8 md:px-64 md:py-24">
           <div>
-          <Link href="/">
+            <Link href="/">
               <Image
                 src="/Gu-LOGO.svg"
                 alt="Vercel Logo"
@@ -45,6 +45,10 @@ export default function ProjectDetailLayout({
         </div>
       </header>
       {children}
+      <footer className="px-8 py-12 md:px-64 md:py-24 grid md:max-w-screen-2xl mx-auto w-full">
+        <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/" className="hover:underline">LinkedIn</a> </p>
+        <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2023-2024</p>
+      </footer>
     </div>
   );
 }

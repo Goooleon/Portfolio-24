@@ -23,7 +23,7 @@ export default function Home() {
         </p>
       </article>
 
-      <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 w-full max-w-full">
+      <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 my-4 md:my-0 md:mb-8 w-full max-w-full">
         <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
@@ -129,9 +129,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div aria-label="design mindset" className="px-8 py-16 md:px-64 md:pt-40 w-full">
+      <div aria-label="design mindset" className="px-8 pb-16 pt-32 md:px-64 md:pt-40 w-full">
         <article className="w-full md:w-9/12">
-          <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h1>
+          <h2 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h2>
           <p className="text-xl">
             {`I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.`}
             < br /> <br />
@@ -142,7 +142,7 @@ export default function Home() {
         <div aria-label="resume button" className="mt-8">
           <a href={`https://drive.google.com/file/d/1Ygk4orNzYfGMuE8dkFg0uowlP8iilBVB/view?usp=sharing`} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center w-fit gap-2 px-5 py-2.5 rounded-full bg-red-500 dark:bg-red-300 hover:bg-red-600 dark:hover:bg-red-200 duration-300 ease-in-out hover:scale-105">
             <div className="min-w-0">
-              <h2 className="text-white dark:text-neutral-950 text-md font-bold truncate text-ellipsis">Résumé.pdf</h2>
+              <h3 className="text-white dark:text-neutral-950 text-md font-bold truncate text-ellipsis">Résumé.pdf</h3>
             </div>
             <div className="flex-none">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 stroke-none fill-white dark:fill-neutral-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -155,7 +155,7 @@ export default function Home() {
 
       <div aria-label="the origin of my gu with dots" className="px-8 py-16 md:px-64 md:pt-40 w-full">
         <article className="w-full md:w-9/12">
-          <h1 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h1>
+          <h2 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h2>
           <p className="text-xl">
             {`Gu is my family name, and I am simply used to it. The Umlaut is to make u a `}
             <span className="font-bold text-red-500 dark:text-red-300">S</span>-<span className="font-bold text-green-500 dark:text-green-300">M</span>-<span className="font-bold text-blue-500 dark:text-blue-300">I</span>-<span className="font-bold text-pink-500 dark:text-pink-300">L</span>-<span className="font-bold text-orange-500 dark:text-orange-300">E</span>-<span className="font-bold text-sky-500 dark:text-sky-300">Y</span>
@@ -163,6 +163,11 @@ export default function Home() {
           </p>
         </article>
       </div>
+
+      <footer className="px-8 py-12 md:px-64 md:py-24 grid md:max-w-screen-2xl mx-auto w-full">
+          <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/" className="hover:underline">LinkedIn</a> </p>
+          <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2023-2024</p>
+        </footer>
     </main>
   );
 }

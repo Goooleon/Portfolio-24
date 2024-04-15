@@ -44,7 +44,7 @@ const FeatureList: React.FC<FeatureListProps> = ({
   const animationClass = `transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`;
 
   return (
-    <div ref={ref} className={`${animationClass} flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
+    <article ref={ref} className={`${animationClass} flex flex-col gap-2 md:gap-8 w-full md:items-start ${layoutClass} ${moduleClassName}`}>
       <div
         className="w-full h-80 md:w-1/2 relative rounded-2xl overflow-hidden">
         {mediaType === 'image' ? (
@@ -70,10 +70,10 @@ const FeatureList: React.FC<FeatureListProps> = ({
         )}
       </div>
       <div className="w-full md:w-1/2 py-4 px-2">
-        <h2 className="text-lg font-bold title-color">{title}</h2>
-        <p className="mt-2">{description}</p>
+        <h2 className="text-xl font-bold title-color">{title}</h2>
+        <p className="text-lg mt-4">{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 

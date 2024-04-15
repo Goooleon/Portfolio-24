@@ -38,7 +38,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             className={`relative w-full overflow-hidden pt-[49%] h-0 transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {isLinkActive ? (
                 <Link href={link} className="block">
-                    <div className="absolute inset-0 z-10 flex px-10 items-center justify-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <div className="absolute inset-0 z-10 flex px-6 md:px-10 items-center justify-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                         <p className="text-white text-xl font-medium text-center">{overlayText}</p>
                     </div>
                     <Image

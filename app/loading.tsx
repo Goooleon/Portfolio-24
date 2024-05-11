@@ -1,3 +1,5 @@
+'use client'
+
 import SplashScreen from "./Components/splash";
 
 export default function Loading() {

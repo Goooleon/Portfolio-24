@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import ProjectTile from './Components/project-tile';
+
+export const metadata: Metadata = {
+  title: "Shengfeng Gu · Designer",
+  description: "Discover the portfolio of Shengfeng Gu (a.k.a. Gü), a Product Designer dedicated to crafting meaningful digital experiences. Explore a curated selection of works that showcase his unique approach and personality.",
+ };
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center md:max-w-screen-2xl mx-auto">
-      <article aria-label="Introduction" className="p-8 md:px-64 md:py-32">
+      <article aria-label="Introduction" className="p-8 md:px-64 md:py-32 w-full">
         <h1 className="mb-3 text-4xl font-bold mb-8 text-neutral-950 dark:text-white w-full md:w-9/12">
           <span role="img" aria-label="Waving Hand" className="mr-4">👋🏽</span>
           {`Hey, I am Gü`}

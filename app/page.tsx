@@ -1,4 +1,8 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import DownloadButton from './Components/buttons';
 import ProjectTile from './Components/project-tile';
+import classNames from 'classnames';
 
 export default function Home() {
   return (

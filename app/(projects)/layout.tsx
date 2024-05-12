@@ -35,11 +35,13 @@ export default function ProjectDetailLayout({
             <li>
               <MyButton
                 label="Previous"
+                href="/"
               />
             </li>
             <li>
               <MyButton
                 label="Next"
+                href="/"
               /></li>
           </ul>
         </div>

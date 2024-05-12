@@ -1,13 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import DownloadButton from './Components/buttons';
 import ProjectTile from './Components/project-tile';
-import classNames from 'classnames';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center md:max-w-screen-2xl mx-auto">
-      <article aria-label="Introduction" className="p-8 md:px-64 md:py-32">
+      <article aria-label="Introduction" className="p-8 md:px-64 md:py-32 w-full">
         <h1 className="mb-3 text-4xl font-bold mb-8 text-neutral-950 dark:text-white w-full md:w-9/12">
           <span role="img" aria-label="Waving Hand" className="mr-4">👋🏽</span>
           {`Hey, I am Gü`}

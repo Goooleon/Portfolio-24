@@ -1,27 +1,56 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+'use client'
+ 
+import { Inter, Splash } from "next/font/google";
 import "./globals.css";
+import React, { useState, useEffect } from "react";
+import SplashScreen from "./Components/splash";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
+ 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Shengfeng Gu · Designer",
-  description: "Discover the portfolio of Shengfeng Gu (a.k.a. Gü), a Product Designer dedicated to crafting meaningful digital experiences. Explore a curated selection of works that showcase his unique approach and personality.",
-};
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [loading, setLoading] = useState(true);
+ 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the duration as needed
+ 
+    return () => clearTimeout(timer);
+  }, []);
+ 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon.svg"
+          type="image/svg+xml"
+          sizes="any"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon.png"
+          type="image/png"
+          sizes="180x180"
+        />
+      </head>
       <body className={inter.className}>
-        {children}
-        <Analytics />
-        <SpeedInsights />
+        {loading ? (
+          <SplashScreen />
+        ) : (
+          <>
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
       </body>
     </html>
   );

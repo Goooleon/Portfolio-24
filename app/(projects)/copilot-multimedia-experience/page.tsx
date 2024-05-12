@@ -1,3 +1,5 @@
+'use client'
+
 import SplashScreen from "@/app/Components/splash";
 import { Metadata } from "next";
 

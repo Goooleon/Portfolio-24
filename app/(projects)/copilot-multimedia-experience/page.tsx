@@ -1,12 +1,6 @@
 'use client'
 
 import SplashScreen from "@/app/Components/splash";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Copilot Multimedia Experience",
-    description: "The page is about...",
-}
 
 export default function Project() {
     return (

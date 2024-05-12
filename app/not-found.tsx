@@ -7,7 +7,7 @@ export default function NotFound() {
             <Link href="/">
                 <Image
                     src="/Gu-LOGO.svg"
-                    alt="Vercel Logo"
+                    alt="Gu LOGO"
                     className="dark:invert hover:-translate-y-1 hover:skew-y-3 duration-300 ease-in-out"
                     width={60}
                     height={24}

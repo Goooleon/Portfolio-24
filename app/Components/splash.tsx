@@ -11,7 +11,6 @@ const SplashScreen = () => {
                     src="/splash-screen.lottie"
                     loop
                     autoplay
-                    onError={(e) => console.error('Error loading Lottie:', e)}
                 />
             </div>
         </div>

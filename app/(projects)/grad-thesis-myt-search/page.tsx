@@ -7,7 +7,7 @@ import FeatureList from "@/app/Components/feature-list";
 import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
-    title: "Improving Search Relevance Feedback through Human Centered Design",
+    title: "Master Thesis",
     description: "The Master Thesis investigates methods to prompt healthcare professionals to provide Explicit Relevance Feedback on search outcomes to enhance search quality and efficiency.",
 }
 

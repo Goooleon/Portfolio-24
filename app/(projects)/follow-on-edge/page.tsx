@@ -7,7 +7,7 @@ import ExternalLink from "@/app/Components/external-link";
 import ResponsiveVideo from "@/app/Components/responsive-video";
 
 export const metadata: Metadata = {
-    title: "Copilot Multimedia Experience",
+    title: "Follow on Edge",
     description: "Follow on Edge is an experimental project aimed at expanding Edge's web services.",
 }
 

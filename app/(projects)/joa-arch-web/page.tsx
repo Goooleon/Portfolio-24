@@ -8,7 +8,7 @@ import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
     title: "JOA website revamp",
-    description: "The page is about...",
+    description: "JOA architecture, a Dutch agency, entrusted me with the task of revamping its official website.",
 }
 
 export default function Project() {

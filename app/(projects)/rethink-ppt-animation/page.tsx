@@ -8,7 +8,7 @@ import FeatureList from "@/app/Components/feature-list";
 
 export const metadata: Metadata = {
     title: "PowerPoint Animation",
-    description: "The page is about...",
+    description: "PowerPoint Online is shifting from the traditional Office ribbon to a sleeker single-line ribbon.",
 }
 
 export default function Project() {

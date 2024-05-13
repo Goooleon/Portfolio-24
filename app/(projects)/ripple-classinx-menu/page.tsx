@@ -8,7 +8,7 @@ import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
     title: "Ripple",
-    description: "The page is about...",
+    description: "Ripple revitalizes ClassIn X's digital whiteboard by overhauling its menu to boost usability and modernize the interface.",
 }
 
 export default function Project() {

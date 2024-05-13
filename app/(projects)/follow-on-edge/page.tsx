@@ -8,7 +8,7 @@ import ResponsiveVideo from "@/app/Components/responsive-video";
 
 export const metadata: Metadata = {
     title: "Copilot Multimedia Experience",
-    description: "The page is about...",
+    description: "Follow on Edge is an experimental project aimed at expanding Edge's web services.",
 }
 
 export default function Project() {

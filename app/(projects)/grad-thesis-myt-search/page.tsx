@@ -8,7 +8,7 @@ import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
     title: "Improving Search Relevance Feedback through Human Centered Design",
-    description: "The page is about...",
+    description: "The Master Thesis investigates methods to prompt healthcare professionals to provide Explicit Relevance Feedback on search outcomes to enhance search quality and efficiency.",
 }
 
 export default function Project() {

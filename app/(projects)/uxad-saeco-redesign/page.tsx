@@ -7,7 +7,7 @@ import FeatureList from "@/app/Components/feature-list";
 
 export const metadata: Metadata = {
     title: "Saeco Xelsis Experience Redesign",
-    description: "The page is about...",
+    description: "During the 'Usability Testing and User Experience Assessment in Design (UXAD)' course, we partnered with Philips to optimize the Saeco Xelsis coffee machine experience.",
 }
 
 export default function Project() {

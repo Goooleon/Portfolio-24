@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import ProjectTile from './Components/project-tile';
-import classNames from 'classnames';
 
 export const metadata: Metadata = {
   title: "Shengfeng Gu · Designer",

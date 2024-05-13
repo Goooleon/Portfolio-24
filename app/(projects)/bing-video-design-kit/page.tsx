@@ -8,7 +8,7 @@ import ExternalLink from "@/app/Components/external-link";
 
 export const metadata: Metadata = {
     title: "Bing Video Design Kit",
-    description: "Bing Video Design Kit is a fun project",
+    description: "Bing Video Design Kit is a centralized hub for Multimedia Designers to synchronize and collaborate effectively",
 }
 
 export default function Project() {

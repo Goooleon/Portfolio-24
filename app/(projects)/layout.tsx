@@ -34,13 +34,10 @@ export default function ProjectDetailLayout({
           <ul className="flex gap-2 md:gap-4">
             <li>
               <MyButton
-                label="Previous"
+                label="LinkedIn"
+                href="https://www.linkedin.com/in/shengfeng-gu-399829154/"
               />
             </li>
-            <li>
-              <MyButton
-                label="Next"
-              /></li>
           </ul>
         </div>
       </header>

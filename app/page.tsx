@@ -1,8 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import DownloadButton from './Components/buttons';
+import type { Metadata } from "next";
 import ProjectTile from './Components/project-tile';
 import classNames from 'classnames';
+
+export const metadata: Metadata = {
+  title: "Shengfeng Gu · Designer",
+  description: "Discover the portfolio of Shengfeng Gu (a.k.a. Gü), a Product Designer dedicated to crafting meaningful digital experiences. Explore a curated selection of works that showcase his unique approach and personality.",
+};
 
 export default function Home() {
   return (

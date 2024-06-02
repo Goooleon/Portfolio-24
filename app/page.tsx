@@ -28,11 +28,11 @@ export default function Home() {
       <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 my-4 md:my-0 md:mb-8 w-full max-w-full">
         <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
-            link="/"
+            link="https://www.microsoft.com/en-us/microsoft-copilot/blog/2023/12/19/turn-your-ideas-into-songs-with-suno-on-microsoft-copilot/"
             imgSrc="/copilot-cover.png"
             imgSize="100"
-            alt="follow on edge cover image"
-            isLinkActive={false}
+            alt="copilot multimedia experience cover image"
+            overlayText={`Copilot Multimedia Experience ↗️`}
           />
         </div>
 

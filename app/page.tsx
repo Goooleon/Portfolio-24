@@ -10,17 +10,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center md:max-w-screen-2xl mx-auto">
       <article aria-label="Introduction" className="p-8 md:px-64 md:py-32 w-full">
-        <h1 className="mb-3 text-4xl font-bold mb-8 text-neutral-950 dark:text-white w-full md:w-9/12">
+        <h1 className="text-4xl font-bold mb-16 text-neutral-950 dark:text-white w-full md:w-9/12">
           <span role="img" aria-label="Waving Hand" className="mr-4">👋🏽</span>
           {`Hey, I am Gü`}
         </h1>
-        <p className="mb-4 text-2xl font-regular md:w-9/12">
+        <p className="mb-6 text-2xl font-regular md:w-9/12">
           a <span className="font-semibold text-neutral-950 dark:text-white">Product Designer</span> at <span aria-label="Microsoft">Micros🌎ft</span> in <span aria-label="Location">📍Beijing,</span>
         </p>
-        <p className="mb-4 text-2xl font-regular md:w-9/12">
+        <p className="mb-6 text-2xl font-regular md:w-9/12">
           a creative mind that blends <span className="font-semibold text-neutral-950 dark:text-white">Human Centered Design</span> with <span className="font-semibold text-neutral-950 dark:text-white">Random Intuition</span>,
         </p>
-        <p className="mb-4 text-2xl font-regular md:w-9/12">
+        <p className="mb-6 text-2xl font-regular md:w-9/12">
           a free soul who enjoys <span aria-label="skiing">🎿</span> <span aria-label="frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
         </p>
       </article>

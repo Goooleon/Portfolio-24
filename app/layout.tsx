@@ -1,13 +1,23 @@
 'use client'
 
-import { Inter } from "next/font/google";
+import { Inter, Alegreya } from 'next/font/google'
 import "./globals.css";
 import React, { useState, useEffect } from "react";
 import SplashScreen from "./Components/splash";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
  
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+ 
+const alegreya = Alegreya({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-alegreya',
+})
  
 export default function RootLayout({
   children,
@@ -25,7 +35,7 @@ export default function RootLayout({
   }, []);
  
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${alegreya.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
@@ -41,7 +51,7 @@ export default function RootLayout({
           sizes="180x180"
         />
       </head>
-      <body className={inter.className}>
+      <body>
         {loading ? (
           <SplashScreen />
         ) : (

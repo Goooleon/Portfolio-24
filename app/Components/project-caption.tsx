@@ -27,7 +27,7 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
             <header>
                 <div className="w-full p-8 md:px-64 md:pb-28">
                     <div className="w-full md:w-9/12">
-                        <h1 className="text-3xl md:text-4xl font-bold w-full text-neutral-950 dark:text-white">{projectTitle}</h1>
+                        <h1 className="font-alegreya text-3xl md:text-4xl font-bold w-full text-neutral-950 dark:text-white">{projectTitle}</h1>
                         <p className="mt-4 opacity-70">{projectDate}</p>
                         <p className="text-lg mt-8 md:mt-12">{projectDes}</p>
                     </div>

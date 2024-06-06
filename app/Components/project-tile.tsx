@@ -39,7 +39,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             {isLinkActive ? (
                 <Link href={link} className="block">
                     <div className="absolute inset-0 z-10 flex px-6 md:px-10 items-center justify-center bg-black bg-opacity-75 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                        <p className="text-white text-xl font-medium text-center">{overlayText}</p>
+                        <p className="font-alegreya text-white text-2xl font-medium text-center">{overlayText}</p>
                     </div>
                     <Image
                         src={imgSrc}

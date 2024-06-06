@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center md:max-w-screen-2xl mx-auto">
       <article aria-label="Introduction" className="p-8 md:px-64 md:py-32 w-full">
-        <h1 className="text-4xl font-bold mb-8 md:mb-16 text-neutral-950 dark:text-white w-full md:w-9/12">
+        <h1 className="font-alegreya text-4xl md:text-5xl font-bold mt-8 md:mt-0 mb-8 md:mb-16 text-neutral-950 dark:text-white w-full md:w-9/12">
           <span role="img" aria-label="Waving Hand" className="mr-4">👋🏽</span>
           {`Hey, I am Gü`}
         </h1>
@@ -133,15 +133,15 @@ export default function Home() {
 
       <div aria-label="design mindset" className="px-8 pb-16 pt-32 md:px-64 md:pt-40 w-full">
         <article className="w-full md:w-9/12">
-          <h2 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">why design?</h2>
+          <h2 className="font-alegreya mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Design makes things better</h2>
           <p className="text-xl">
-            {`I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing with others (people or creature) and figuring out how things work.`}
+            {`I believe in the transformational power of design and its attempt to make the world (a little) better. Regardless of its form, design is essentially a mindset of empathizing (with people or creature) and figuring out how things work.`}
             < br /> <br />
             {`I devote myself to creating (functional) useful and/or (emotional) enjoyable experiences that I call it meaningful moments.`}
           </p>
         </article>
 
-        <div aria-label="resume button" className="mt-8">
+        <div aria-label="resume button" className="mt-12">
           <a href={`https://drive.google.com/file/d/1Ygk4orNzYfGMuE8dkFg0uowlP8iilBVB/view?usp=sharing`} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center w-fit gap-2 px-5 py-2.5 rounded-full bg-red-500 dark:bg-red-300 hover:bg-red-600 dark:hover:bg-red-200 duration-300 ease-in-out hover:scale-105">
             <div className="min-w-0">
               <h3 className="text-white dark:text-neutral-950 text-md font-bold truncate text-ellipsis">Résumé.pdf</h3>
@@ -153,17 +153,6 @@ export default function Home() {
             </div>
           </a>
         </div>
-      </div>
-
-      <div aria-label="the origin of my gu with dots" className="px-8 py-16 md:px-64 md:pt-40 w-full">
-        <article className="w-full md:w-9/12">
-          <h2 className="mb-3 text-3xl font-bold mb-8 text-neutral-950 dark:text-white">Gü vs Gu</h2>
-          <p className="text-xl">
-            {`Gu is my family name, and I am simply used to it. The Umlaut is to make u a `}
-            <span className="font-bold text-red-500 dark:text-red-300">S</span>-<span className="font-bold text-green-500 dark:text-green-300">M</span>-<span className="font-bold text-blue-500 dark:text-blue-300">I</span>-<span className="font-bold text-pink-500 dark:text-pink-300">L</span>-<span className="font-bold text-orange-500 dark:text-orange-300">E</span>-<span className="font-bold text-sky-500 dark:text-sky-300">Y</span>
-            {` FACE :)`}
-          </p>
-        </article>
       </div>
 
       <footer className="px-8 py-12 md:px-64 md:py-24 grid md:max-w-screen-2xl mx-auto w-full">

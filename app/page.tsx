@@ -26,37 +26,40 @@ export default function Home() {
       </article>
 
       <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 my-4 md:my-0 md:mb-8 w-full max-w-full">
-        <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="https://www.microsoft.com/en-us/microsoft-copilot/blog/2023/12/19/turn-your-ideas-into-songs-with-suno-on-microsoft-copilot/"
             imgSrc="/copilot-cover.png"
             imgSize="100"
             alt="copilot multimedia experience cover image"
             overlayText={`Copilot Multimedia Experience ↗️`}
+            tag="🤖 Design for A.I."
           />
         </div>
 
-        <div aria-label="item-2" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-2" className="row-span-1 col-span-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/follow-on-edge"
             imgSrc="/follow-on-edge-cover.png"
             imgSize="49.1"
             alt="follow on edge cover image"
             overlayText={`Follow on Edge`}
+            tag="🌎 Web Innovation"
           />
         </div>
 
-        <div aria-label="item-3" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-3" className="row-span-1 col-span-1 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/bing-video-design-kit"
             imgSrc="/bing-design-kit-cover.png"
             imgSize="100"
             alt="Bing video design kit cover image"
             overlayText={`Bing Video Design Kit`}
+            tag="🗂️ DesignOps"
           />
         </div>
 
-        <div aria-label="item-4" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-4" className="row-span-1 col-span-1 bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
             imgSrc="/animation-cover.gif"
@@ -66,52 +69,57 @@ export default function Home() {
           />
         </div>
 
-        <div aria-label="item-5" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-5" className="row-span-1 col-span-1 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="https://vimeo.com/482577130?share=copy"
             imgSrc="/50s-cover.png"
             imgSize="100"
             alt="one day in the 50s movie cover image"
             overlayText={`One day in my 50's ↗️`}
+            tag="🎬 Movie"
           />
         </div>
-        <div aria-label="item-6" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-6" className="row-span-1 col-span-1 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/joa-arch-web"
             imgSrc="/joa-redesign-cover.png"
             imgSize="100"
             alt="JOA architecture website redesign cover image"
             overlayText={`JOA Website Revamp`}
+            tag="🌎 Web"
           />
         </div>
-        <div aria-label="item-7" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-7" className="row-span-1 col-span-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/ripple-classinx-menu"
             imgSrc="/ripple-classinx-cover.png"
             imgSize="49.1"
             alt="ripple classinx menu cover image"
             overlayText={`Ripple - a refreshed ClassIn X menu`}
+            tag="👆🏽 Touch Screen"
           />
         </div>
-        <div aria-label="item-8" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-8" className="row-span-1 col-span-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/grad-thesis-myt-search"
             imgSrc="/grad-myt-search-cover.png"
             imgSize="49.1"
             alt="master graduation thesis cover image"
             overlayText={`Master Thesis - myTomorrows Search`}
+            tag="🎓 Research"
           />
         </div>
-        <div aria-label="item-9" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-9" className="row-span-1 col-span-1 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/uxad-saeco-redesign"
             imgSrc="/uxad-redesign-cover.png"
             imgSize="100"
             alt="uxad saeco redesign cover image"
             overlayText={`Saeco Xelsis Experience Redesign`}
+            tag="☕ Redesign"
           />
         </div>
-        <div aria-label="item-10" className="row-span-1 col-span-1 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-10" className="row-span-1 col-span-1 rounded-l-[128px] rounded-r-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
             imgSrc="/gu-surfing.png"
@@ -120,13 +128,14 @@ export default function Home() {
             isLinkActive={false} // Set this to false to disable the link
           />
         </div>
-        <div aria-label="item-11" className="row-span-1 col-span-2 rounded-xl md:rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-11" className="row-span-1 col-span-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/rethink-ppt-animation"
             imgSrc="/ppt-animation-cover.png"
             imgSize="49.1"
             alt="rethinking powerpoint animation cover image"
             overlayText={`Rethinking PowerPoint Animation Experience`}
+            tag="💭 Concept"
           />
         </div>
       </div>
@@ -156,7 +165,7 @@ export default function Home() {
       </div>
 
       <footer className="px-8 py-12 md:px-64 md:py-24 grid md:max-w-screen-2xl mx-auto w-full">
-          <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu-399829154/" className="hover:underline">LinkedIn</a> </p>
+          <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu/" className="hover:underline">LinkedIn</a> </p>
           <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2023-2024</p>
         </footer>
     </main>

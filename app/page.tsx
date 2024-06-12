@@ -59,7 +59,7 @@ export default function Home() {
           />
         </div>
 
-        <div aria-label="item-4" className="row-span-1 col-span-1 bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
+        <div aria-label="item-4" className="row-span-1 col-span-1 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
             link="/"
             imgSrc="/animation-cover.gif"
@@ -96,7 +96,7 @@ export default function Home() {
             imgSize="49.1"
             alt="ripple classinx menu cover image"
             overlayText={`Ripple - a refreshed ClassIn X menu`}
-            tag="👆🏽 Touch Screen"
+            tag="🖐🏽 Touch Screen"
           />
         </div>
         <div aria-label="item-8" className="row-span-1 col-span-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-hidden">

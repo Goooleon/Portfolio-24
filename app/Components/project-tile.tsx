@@ -42,7 +42,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
                 <Link href={link} className="block">
                     <div className="absolute inset-0 z-10 flex px-6 md:px-10 items-center justify-center bg-black bg-opacity-75 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                         <p className="font-alegreya text-white text-2xl font-medium text-center">{overlayText}</p>
-                        <div className="z-10 absolute top-2 right-2 rounded-l-full rounded-br-full bg-white bg-opacity-15 rounded-tr-lg border border-solid border-white border-opacity-25">
+                        <div className="z-10 absolute top-2 right-2 rounded-full bg-white bg-opacity-15 border border-solid border-white border-opacity-25">
                             <p className="text-white px-4 py-2 text-sm">{tag}</p>
                         </div>
                     </div>

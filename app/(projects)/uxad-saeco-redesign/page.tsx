@@ -26,13 +26,13 @@ export default function Project() {
 
             <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-100 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
                 <div aria-label="video demo section">
-                <div className="pt-[56.25%] relative w-full h-full rounded-lg md:rounded-2xl drop-shadow-2xl bg-neutral-100 dark:bg-neutral-900">
+                    <div className="pt-[56.25%] relative w-full h-full rounded-lg md:rounded-2xl drop-shadow-2xl bg-neutral-100 dark:bg-neutral-900">
                         <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">{`Your access to Vimeo is restricted :(`}</h1>
                         <iframe
                             src="https://player.vimeo.com/video/379281966?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            title="PPT Online Modern Animation Concept"
-                            className="absolute w-full h-full top-0 left-0"
+                            title="Saeco Xelsis Redesign"
+                            className="absolute w-full h-full top-0 left-0 rounded-lg md:rounded-2xl z-10"
                         ></iframe>
                     </div>
                 </div>

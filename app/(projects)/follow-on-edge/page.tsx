@@ -82,7 +82,7 @@ export default function Project() {
                         src="/follow-on-edge/design-pane.png"
                         alt={`an image showing the follow confirmation pane`}
                         title={`Follow confirmation`}
-                        description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
+                        description={`Clicking the follow entry button activates the ‘Following’ side pane, which opens to the creator's profile page, signalling that the creator has been successfully followed. For first-time users, this page also serves as an introduction to the follow feature.`}
                         swap={false}
                         moduleClassName="mt-8 md:mt-32"
                     />

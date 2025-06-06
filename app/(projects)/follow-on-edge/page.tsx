@@ -20,7 +20,7 @@ export default function Project() {
                 projectDes={`Follow on Edge is an experimental project aimed at expanding Edge's web services by allowing users to follow any content on the web, focusing more effectively on their interests. This project introduces the MVP version of Follow on Edge, supporting the ability to follow creators on YouTube, TikTok, and Pinterest.`}
                 projectCover="/follow-on-edge/cover.png"
                 role={`Lead Product Designer`}
-                platform={`Edge browswer (Windows & MacOS)`}
+                platform={`Edge browser (Windows & MacOS)`}
                 highlights={`MVP launched on Microsoft Edge 97 for experimentation`}
                 placeholderColor={`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNctOrcfwAHKwMb553f6wAAAABJRU5ErkJggg==`}
             />

@@ -42,7 +42,7 @@ export default function Project() {
                 <div aria-label="background section">
                     <TextBlock
                         sectionSubtitle={`Background`}
-                        sectionTitle={`The move to the single-line Ribbon`}
+                        sectionTitle={`The Move to Single-line Ribbon`}
                         sectionDes={`As PowerPoint Online evolves with a shift towards a single-line ribbon interface, the challenge is to fit animation features into a smaller space, modernize the animation experience, and incorporate more desktop app (animation) features.`}
                     />
                     <ResponsiveImage
@@ -61,7 +61,7 @@ export default function Project() {
                 <div aria-label="user objectives section">
                     <TextBlock
                         sectionSubtitle={`User objectives`}
-                        sectionTitle={`Diversified needs from PowerPoint users`}
+                        sectionTitle={`Diversified Needs from PowerPoint Users`}
                         sectionDes={`After analyzing hundreds of real-world animated slides created by PowerPoint users of various skill levels and for diverse purposes, we identified three main user objectives reflecting different skills, goals, and expectations.`}
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">

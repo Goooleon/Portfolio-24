@@ -88,7 +88,7 @@ export default function Project() {
                 <div aria-label="design kit showcase section">
                     <TextBlock
                         sectionSubtitle={`Showcase`}
-                        sectionTitle={`The kit made for collaboration`}
+                        sectionTitle={`The Kit Made for Collaboration`}
                     />
                     <ResponsiveImage
                         imgSrc="/bing-video-design-kit/design-kit-overview.png"
@@ -99,7 +99,7 @@ export default function Project() {
                         mediaType="image"
                         src="/bing-video-design-kit/design-kit-ratio.png"
                         alt={`an illustration of locked video thumbnail apsect ratio`}
-                        title={`Locked thumbnail ratios`}
+                        title={`Locked Thumbnail Ratios`}
                         description={`To preserve the original aspect ratio of video thumbnails, critical for user decision-making, the kit uses the "Ratios" Figma plugin, ensuring responsiveness across different viewport widths.`}
                         swap={true}
                         moduleClassName="mt-8 md:mt-32"
@@ -107,7 +107,7 @@ export default function Project() {
                     <FeatureList
                         mediaType="image"
                         src="/bing-video-design-kit/design-kit-grouping.png"
-                        title={`Standardized grouping`}
+                        title={`Standardized Grouping`}
                         description={`To enhance the usability of the design kit, we've standardized the grouping of design elements based on two principles: 1) prioritizing Auto Layout and 2) applying semantic naming to all layers.`}
                         swap={false}
                         moduleClassName="mt-8 md:mt-32"

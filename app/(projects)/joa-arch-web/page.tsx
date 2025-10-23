@@ -37,7 +37,7 @@ export default function Project() {
                 <div aria-label="introduction section">
                     <TextBlock
                         sectionSubtitle={`Project Brief`}
-                        sectionTitle={`An overall upgrade`}
+                        sectionTitle={`An Overall Upgrade`}
                         sectionDes={`The original JOA website, created in 2017 using WordPress, no longer meets the firm's needs due to its expanding business and diverse project portfolio. Recognizing the need for a modernized platform, JOA aims to enhance its online presence with a redesigned website that optimizes visitor experience and engagement.`}
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
@@ -67,8 +67,8 @@ export default function Project() {
 
                 <div aria-label="solution section">
                     <TextBlock
-                        sectionSubtitle={`Site structure`}
-                        sectionTitle={`Made for easy maintenance`}
+                        sectionSubtitle={`Site Structure`}
+                        sectionTitle={`Made for Easy Maintenance`}
                         sectionDes={`The JOA website comprises five main sections and utilizes Elementor on WordPress, enabling straightforward maintenance and updates by JOA staff.`}
                     />
                     <ResponsiveImage
@@ -80,7 +80,7 @@ export default function Project() {
 
                 <div aria-label="showcase section">
                     <TextBlock
-                        sectionTitle={`The new JOA website`}
+                        sectionTitle={`The New JOA Website`}
                     />
                     <ResponsiveImage
                         imgSrc="/joa-arch-web/showcase-1.png"

@@ -53,7 +53,7 @@ export default function Project() {
                 <div aria-label="problem section">
                     <TextBlock
                         sectionSubtitle={`The problems`}
-                        sectionTitle={`A Significant Potential for enhancement`}
+                        sectionTitle={`A Significant Potential for Enhancement`}
                         sectionDes={`Through empirical research involving our team and invited testers, we analyzed all identified issues and highlighted three problems with potential for improvement through a redesign.`}
                     />
                     <FeatureList
@@ -108,7 +108,7 @@ export default function Project() {
                 <div aria-label="design explore section">
                     <TextBlock
                         sectionSubtitle={`Design exploration`}
-                        sectionTitle={`The path towards a converged concept`}
+                        sectionTitle={`The Path towards A Converged Concept`}
                         sectionDes={`With our design objective as a guide, we investigated three design paths to address these challenges and discover elements that enhance the overall product experience.`}
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
@@ -256,7 +256,7 @@ export default function Project() {
                 <div aria-label="concept modification section">
                     <TextBlock
                         sectionSubtitle={`Concept modification`}
-                        sectionTitle={`Iteration based on user feedback`}
+                        sectionTitle={`Iteration based on User Feedback`}
                         sectionDes={`The evaluation yielded positive feedback, with test participants favoring the usability and new features of the concept. However, several areas were highlighted for further refinement, as detailed below.`}
                     />
                     <ResponsiveImage

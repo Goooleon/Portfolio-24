@@ -5,6 +5,7 @@ import RichCard from "@/app/Components/rich-card";
 import ResponsiveImage from "@/app/Components/responsive-image";
 import FeatureList from "@/app/Components/feature-list";
 import ExternalLink from "@/app/Components/external-link";
+import VisualTextBlock from "@/app/Components/visual-text-block";
 
 export const metadata: Metadata = {
     title: "Master Thesis",
@@ -41,7 +42,7 @@ export default function Project() {
                 <div aria-label="background section">
                     <TextBlock
                         sectionSubtitle={`Background`}
-                        sectionTitle={`A tool that connects patients and new treatments`}
+                        sectionTitle={`The Bridge Between Patients and New Treatments`}
                         sectionDes={
                             <>
                                 {`myTomorrows is a PharmaTech company that aims to help patients discover and access treatments under development (i.e., Clinical trials and Expanded Access Programs), addressing a significant hurdle for patients with unmet medical needs.`}
@@ -67,7 +68,7 @@ export default function Project() {
                 <div aria-label="problem section">
                     <TextBlock
                         sectionSubtitle={`The need`}
-                        sectionTitle={`The lack of relevance feedback`}
+                        sectionTitle={`The Lack of Relevance Feedback`}
                         sectionDes={
                             <>
                                 {`myTomorrows Search is capable of indexing through all recognized clinical trial registries such as clinicaltrials.gov. However, due to the limited scale of myTomorrows Search users, analyzing user behaviors (implicit relevance feedback) fails to help improve the search system. `}
@@ -150,7 +151,7 @@ export default function Project() {
                 <div aria-label="ideation section">
                     <TextBlock
                         sectionSubtitle={`Ideation`}
-                        sectionTitle={`Exploring interactions to collect feedback`}
+                        sectionTitle={`Exploring Interactions to Collect Feedback`}
                         sectionDes={
                             <>
                                 {`In the generalized search flow, it was determined that relevance feedback can be provided on SERP (the search results page) by assessing the interventions under study, with assessments unlikely to change after viewing the full study record.`}
@@ -205,19 +206,24 @@ export default function Project() {
                 </div>
             </div>
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl opposite-theme px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="relative bg-neutral-50 dark:bg-neutral-950 flex flex-col gap-28 md:gap-56 max-w-screen-2xl px-8 py-12 md:py-40 md:px-56 md:mx-8">
+                <div className="absolute top-0 left-0 w-full h-[800px] pointer-events-none bg-gradient-to-b from-sky-200 dark:from-sky-950 to-transparent">
+                </div>
                 <div aria-label="design showcase section">
-                    <TextBlock
-                        sectionSubtitle={`The design concept`}
-                        sectionTitle={`A Search that evolves with users`}
+                    <VisualTextBlock
+                        textColor="text-sky-700 dark:text-sky-400"
+                        sectionSubtitle="The Design Concept"
+                        sectionTitle={`A Search that Evolves with Users`}
                         sectionDes={
                             <>
                                 {`User testing revealed that the 'pre-screener' was particularly more effective, transforming personal utility into actionable relevance feedback to improve myTomorrows Search.
-                                
-                                The prescreening tool enables healthcare professionals to swiftly indicate their initial choices on SERP, as typically done in medical literature reviews. Additionally, the relevance buckets provide extra functionality to make their search more manageable and efficient.`}
+
+                                    The prescreening tool enables healthcare professionals to swiftly indicate their initial choices on SERP, as typically done in medical literature reviews. Additionally, the relevance buckets provide extra functionality to make their search more manageable and efficient.
+                                `}
                             </>
                         }
                     />
+
                     <ResponsiveImage
                         imgSrc="/grad-thesis-myt-search/concept-overview.png"
                         alt="solution illustration"
@@ -242,13 +248,24 @@ export default function Project() {
                 </div>
             </div>
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-50 dark:bg-neutral-950 rounded-b-2xl border-b border-neutral-100 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="relative bg-neutral-50 dark:bg-neutral-950 flex flex-col gap-28 md:gap-56 max-w-screen-2xl px-8 py-12 md:py-40 md:px-56 md:mx-8">
+                <div className="absolute top-0 left-0 w-full h-[800px] pointer-events-none bg-gradient-to-b from-emerald-200 dark:from-emerald-950 to-transparent">
+                </div>
+
                 <div aria-label="generalized design guideline section">
-                    <TextBlock
-                        sectionSubtitle={`The generalized guide`}
-                        sectionTitle={`A guide to designing explicit feedback collection`}
-                        sectionDes={`After synthesizing research insights and reflecting on the project's progression, a design guide was formulated. This guide details approaches for crafting feedback collection experiences within search systems and extends to broader applications.`}
+                    <VisualTextBlock
+                        textColor="text-emerald-700 dark:text-emerald-400"
+                        sectionSubtitle="The Generalized Guide"
+                        sectionTitle={`A Guide to Designing Explicit Feedback Collection`}
+                        sectionDes={
+                            <>
+                                {`After synthesizing research insights and reflecting on the project's progression, a design guide was formulated. This guide details approaches for crafting feedback collection experiences within search systems and extends to broader applications.
+                                `}
+                            </>
+                        }
                     />
+
+
                     <div className="flex flex-col gap-4">
                         <ResponsiveImage
                             imgSrc="/grad-thesis-myt-search/step-1.png"
@@ -346,6 +363,35 @@ export default function Project() {
                                 imgSize="40.2"
                             />
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-50 dark:bg-neutral-950 rounded-b-2xl border-b border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
+                <div aria-label="reflection and envision section">
+                    <TextBlock
+                        sectionTitle={`Retrospect`}
+                        sectionDes={`Reflecting on the design guide, its usefulness and effectiveness are yet to be determined. The guide's development was influenced by both empirical findings and research outcomes, the true value of the guide can only be unlocked through broader application in real-world contexts.
+                            
+                            See more details about the research from below links 👇`}
+                    />
+
+                    <div aria-label="external link-1" className="mb-4">
+                        <ExternalLink
+                            title={`Improving Search Relevance Feedback through Human Centered Design`}
+                            url="https://repository.tudelft.nl/record/uuid:fad805a9-136b-49a7-a2e8-228b37ba597f"
+                            favicon="/grad-thesis-myt-search/tud-favicon.png"
+                            alt="favicon"
+                        />
+                    </div>
+
+                    <div aria-label="external link-1">
+                        <ExternalLink
+                            title={`myTomorrows Search`}
+                            url="https://platform.mytomorrows.com/home"
+                            favicon="/grad-thesis-myt-search/myt-favicon.png"
+                            alt="favicon"
+                        />
                     </div>
                 </div>
             </div>

@@ -61,7 +61,7 @@ const VisualTextBlock: React.FC<TextBlockProps> = ({
                     />
                 </div>
             </div>
-            {sectionDes && <p className={`text-lg mt-6`}>{sectionDes}</p>}
+            {sectionDes && <p className={`text-lg mt-6 whitespace-pre-line`}>{sectionDes}</p>}
         </section>
     );
 

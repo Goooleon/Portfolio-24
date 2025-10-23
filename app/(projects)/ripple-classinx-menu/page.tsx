@@ -29,7 +29,7 @@ export default function Project() {
                 <div aria-label="background section">
                     <TextBlock
                         sectionSubtitle="Background"
-                        sectionTitle="The initial ClassIn X menu"
+                        sectionTitle="The Initial ClassIn X Menu"
                         sectionDes="The initial menu features a two-ring circular design: the inner ring presents a static array of primary functions, while the outer ring serves as a flexible space for secondary features and beyond."
                     />
                     <ResponsiveImage
@@ -51,7 +51,7 @@ export default function Project() {
                 <div aria-label="problem-section">
                     <TextBlock
                         sectionSubtitle="Pain points"
-                        sectionTitle="The menu that obstacles and dissatisfies users"
+                        sectionTitle="The Menu that Obstacles and Dissatisfies"
                         sectionDes="After reviewing and analyzing feedback from both internal and external sources, we identified three main categories of user complaints."
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
@@ -91,7 +91,7 @@ export default function Project() {
                 <div aria-label="research section">
                     <TextBlock
                         sectionSubtitle="User Research"
-                        sectionTitle="Immersion with real users"
+                        sectionTitle="Immersion with Users"
                         sectionDes="For redesigning inspirations, we carried out user research with 10 participants using a mixed-method approach, including Heuristic Evaluation, Icon Usability Testing, Card Sorting, and Interviews. We complemented this with an analysis of online metrics to derive more robust and persuasive insights."
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">
@@ -153,7 +153,7 @@ export default function Project() {
                 <div aria-label="exploration section">
                     <TextBlock
                         sectionSubtitle="Design explore"
-                        sectionTitle="Exploring interactions"
+                        sectionTitle="Exploring Interactions"
                         sectionDes="To align with users' goals and address issues in the initial ClassIn menu, we explored various restructuring options for the information architecture (IA), ultimately finalizing the version as below."
                     />
                     <ResponsiveImage
@@ -188,7 +188,7 @@ export default function Project() {
                 <div aria-label="design section">
                     <TextBlock
                         sectionSubtitle="Final design"
-                        sectionTitle="The refreshed menu that ripples"
+                        sectionTitle="The Refreshed Menu that Ripples"
                     />
                     <ResponsiveImage
                         imgSrc="/ripple-classinx-menu/design-showcase.png"
@@ -230,7 +230,7 @@ export default function Project() {
                 <div aria-label="impact section">
                     <TextBlock
                         sectionSubtitle="Project result"
-                        sectionTitle="Redesign gains a positive impact"
+                        sectionTitle="Redesign Drives Positive Impact"
                         sectionDes="The result of the menu refresh was remarkable in monitored feedback channels and usability testing with users."
                     />
                     <div className="flex flex-col gap-4 w-full md:flex-row md:items-stretch">

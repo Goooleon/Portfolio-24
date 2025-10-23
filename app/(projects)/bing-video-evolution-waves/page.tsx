@@ -30,7 +30,7 @@ export default function Project() {
                 <div aria-label="background section">
                     <TextBlock
                         sectionSubtitle={`Background`}
-                        sectionTitle={`The role of video in search`}
+                        sectionTitle={`The Role of Video on Bing`}
                         sectionDes={
                             <>
                                 {`Users come to search engines with different intents. Regardless of purpose, video is one of many result formats Bing uses to meet their needs, offering a more vivid and easily digestible experience.`}
@@ -327,7 +327,7 @@ export default function Project() {
 
                     <TextBlock
                         sectionSubtitle={`Project 06`}
-                        sectionTitle={`Surfacing insights about videos`}
+                        sectionTitle={`Surfacing Insights about Videos`}
                         sectionDes={
                             <>
                                 {`Powered by LLMs, Bing can extract and summarize key insights from videos, providing new information scents that help users assess relevance faster. However, this still depends on transcript availability and further technological maturity.`}

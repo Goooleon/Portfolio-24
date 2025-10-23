@@ -29,7 +29,7 @@ export default function Project() {
                 <div aria-label="introduction section">
                     <TextBlock
                         sectionSubtitle="Background"
-                        sectionTitle={`Discontinued Follow experience`}
+                        sectionTitle={`Discontinued Follow Experience`}
                         sectionDes={
                             <>
                                 {`The "Follow" feature, common across social platforms, allows users to keep up with their interests. However, its scattered presence across different sites means there's no unified way to track everything in one place.`}
@@ -48,7 +48,7 @@ export default function Project() {
                 <div aria-label="project goal section">
                     <TextBlock
                         sectionSubtitle={`Project goal`}
-                        sectionTitle={`Aggregated focus`}
+                        sectionTitle={`Aggregated Focus`}
                         sectionDes={`Microsoft Edge, a gateway to the web, is ideal for surfacing creators and aggregating user-interested content. It allows users to follow creators from websites being visited, creating an engagement loop for receiving updates and consumption. The MVP initially focuses on creators from YouTube, TikTok, and Pinterest.`}
                     />
                     <ResponsiveImage
@@ -61,7 +61,7 @@ export default function Project() {
                 <div aria-label="design showcase section">
                     <TextBlock
                         sectionSubtitle="Design showcase"
-                        sectionTitle={`Follow on a browswer`}
+                        sectionTitle={`Follow through Edge Browser`}
                         sectionDes={`The Edge follow experience begins in the address bar and extends to the ‘Following’ side pane, allowing users to stay updated with content aggregated from across the web, all in one place.`}
                     />
                     <ResponsiveVideo
@@ -72,7 +72,7 @@ export default function Project() {
                         mediaType="image"
                         src="/follow-on-edge/design-entry.png"
                         alt={`an image of showing the follow entry`}
-                        title={`Follow entry`}
+                        title={`Follow Entry`}
                         description={`When Edge identifies creators from URLs (with user privacy consent as a prerequisite), a button appears in the address bar. This feature entry includes two main elements: the creator's avatar with an add icon and a call-to-action text.`}
                         swap={true}
                         moduleClassName="mt-8 md:mt-32"
@@ -81,7 +81,7 @@ export default function Project() {
                         mediaType="image"
                         src="/follow-on-edge/design-pane.png"
                         alt={`an image showing the follow confirmation pane`}
-                        title={`Follow confirmation`}
+                        title={`Follow Confirmation`}
                         description={`Clicking the follow entry button activates the ‘Following’ side pane, which opens to the creator's profile page, signalling that the creator has been successfully followed. For first-time users, this page also serves as an introduction to the follow feature.`}
                         swap={false}
                         moduleClassName="mt-8 md:mt-32"
@@ -90,7 +90,7 @@ export default function Project() {
                         mediaType="image"
                         src="/follow-on-edge/design-notification.png"
                         alt={`an image of showing notification from Edge Follow`}
-                        title={`Re-engage notification`}
+                        title={`Re-engage Notification`}
                         description={`Edge sends daily notifications to re-engage users with new content. This aggressive design approach is intentional, but users are provided with control options to manage these notifications.`}
                         swap={true}
                         moduleClassName="mt-8 md:mt-32"
@@ -106,7 +106,7 @@ export default function Project() {
                 <div aria-label="reflection and envision section">
                     <TextBlock
                         sectionSubtitle={`The Challenge ahead`}
-                        sectionTitle={`Conflating same creators from various platforms`}
+                        sectionTitle={`The Problem of Merging and Duplication`}
                         sectionDes={
                             <>
                                 {`In the MVP phase, each creator is treated as separate across different social media platforms, meaning the same creator on various sites appears as different creators in Follow on Edge.`}

@@ -113,7 +113,7 @@ export default function Project() {
                                 
                                 We plan to evolve the feature to link all channels of a creator together, making it scalable. The challenges ahead include: 1) exploring a method to combine a creator's details into a unified profile, and 2) figuring out a way to cohesively present content from various platforms within a single creator profile.
                                 
-                                Read the official press release below 👇
+                                Read media coverage below 👇
                                 `}
                             </>
                         }

@@ -109,15 +109,16 @@ export default function Project() {
                         sectionTitle={`The Problem of Merging and Duplication`}
                         sectionDes={
                             <>
-                                {`In the MVP phase, each creator is treated as separate across different social media platforms, meaning the same creator on various sites appears as different creators in Follow on Edge.`}
-                                <br /><br />
-                                {`We plan to evolve the feature to link all channels of a creator together, making it scalable. The challenges ahead include: 1) exploring a method to combine a creator's details into a unified profile, and 2) figuring out a way to cohesively present content from various platforms within a single creator profile.`}
+                                {`In the MVP phase, each creator is treated as separate across different social media platforms, meaning the same creator on various sites appears as different creators in Follow on Edge.
+                                
+                                We plan to evolve the feature to link all channels of a creator together, making it scalable. The challenges ahead include: 1) exploring a method to combine a creator's details into a unified profile, and 2) figuring out a way to cohesively present content from various platforms within a single creator profile.
+                                
+                                Read the official press release below 👇
+                                `}
                             </>
                         }
                     />
-                </div>
 
-                <div aria-label="reflection and envision section">
                     <ExternalLink
                         title={`Microsoft lets you follow YouTube creators in Edge browser test`}
                         url="https://www.theverge.com/"
@@ -125,6 +126,7 @@ export default function Project() {
                         alt="favicon"
                     />
                 </div>
+
             </div>
         </div>
     );

@@ -140,7 +140,7 @@ export default function Project() {
                 </div>
             </div>
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl opposite-theme px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="opposite-theme flex flex-col gap-28 md:gap-56 max-w-screen-2xl px-8 py-12 md:py-40 md:px-56 md:mx-8">
                 <div aria-label="design concept section">
                     <TextBlock
                         sectionSubtitle={`The final concept`}

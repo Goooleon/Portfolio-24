@@ -25,7 +25,7 @@ export default function Project() {
                 placeholderColor={`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcfnrZfwAHkgMpU5FQdQAAAABJRU5ErkJggg==`}
             />
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-100 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 bg-neutral-50 dark:bg-neutral-950 rounded-t-2xl border-t border-neutral-100 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
                 <div aria-label="video demo section">
                     <div className="pt-[56.25%] relative w-full h-full rounded-lg md:rounded-2xl drop-shadow-2xl bg-neutral-100 dark:bg-neutral-900">
                         <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">{`Your access to Vimeo is restricted :(`}</h1>
@@ -212,10 +212,9 @@ export default function Project() {
                         sectionTitle={`A Search that evolves with users`}
                         sectionDes={
                             <>
-                                {`User testing revealed that the 'pre-screener' was particularly more effective, transforming personal utility into actionable relevance feedback to improve myTomorrows Search.`}
-                                <br />
-                                <br />
-                                {`The prescreening tool enables healthcare professionals to swiftly indicate their initial choices on SERP, as typically done in medical literature reviews. Additionally, the relevance buckets provide extra functionality to make their search more manageable and efficient.`}
+                                {`User testing revealed that the 'pre-screener' was particularly more effective, transforming personal utility into actionable relevance feedback to improve myTomorrows Search.
+                                
+                                The prescreening tool enables healthcare professionals to swiftly indicate their initial choices on SERP, as typically done in medical literature reviews. Additionally, the relevance buckets provide extra functionality to make their search more manageable and efficient.`}
                             </>
                         }
                     />
@@ -243,7 +242,7 @@ export default function Project() {
                 </div>
             </div>
 
-            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-100 dark:bg-neutral-950 rounded-b-2xl border-b border-neutral-200 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
+            <div aria-label="content" className="flex flex-col gap-28 md:gap-56 max-w-screen-2xl bg-neutral-50 dark:bg-neutral-950 rounded-b-2xl border-b border-neutral-100 dark:border-neutral-900 px-8 py-12 md:py-40 md:px-56 md:mx-8">
                 <div aria-label="generalized design guideline section">
                     <TextBlock
                         sectionSubtitle={`The generalized guide`}
@@ -273,7 +272,7 @@ export default function Project() {
                         />
                     </div>
                     <TextBlock
-                        sectionDes={`ATen recommendations on designing feedback collection experience based on three behavioral change pillars of Motivation, Ability, and Prompt.`}
+                        sectionDes={`Ten recommendations on designing feedback collection experience based on three behavioral change pillars of Motivation, Ability, and Prompt.`}
                         moduleClassName="mb-12 mt-8 md:mt-16"
                     />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

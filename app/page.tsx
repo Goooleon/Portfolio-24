@@ -15,7 +15,7 @@ export default function Home() {
           {`Hey, I am Gü`}
         </h1>
         <p className="mb-6 text-2xl font-regular md:w-9/12">
-          a <span className="font-semibold text-neutral-950 dark:text-white">Product Designer</span> at <span aria-label="Microsoft">Micros🌎ft</span> in <span aria-label="Location">📍Beijing,</span>
+          Ex-<span aria-label="Microsoft">Microsoft</span> <span className="font-semibold text-neutral-950 dark:text-white">Product Designer</span> based in <span aria-label="Location">🇨🇦 Vancouver,</span>
         </p>
         <p className="mb-6 text-2xl font-regular md:w-9/12">
           a creative mind that blends <span className="font-semibold text-neutral-950 dark:text-white">Human Centered Design</span> with <span className="font-semibold text-neutral-950 dark:text-white">Random Intuition</span>,
@@ -28,12 +28,12 @@ export default function Home() {
       <div aria-label="projects" className="grid grid-rows-3 grid-cols-2 md:grid-cols-6 gap-2 px-4 my-4 md:my-0 md:mb-8 w-full max-w-full">
         <div aria-label="item-1" className="row-span-2 col-span-2 rounded-xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden">
           <ProjectTile
-            link="https://www.microsoft.com/en-us/microsoft-copilot/blog/2023/12/19/turn-your-ideas-into-songs-with-suno-on-microsoft-copilot/"
-            imgSrc="/copilot-cover.png"
+            link="/bing-video-evolution-waves"
+            imgSrc="/bing-video-evolution-waves-cover.png"
             imgSize="100"
-            alt="copilot multimedia experience cover image"
-            overlayText={`Copilot Multimedia Experience ↗️`}
-            tag="🤖 Design for A.I."
+            alt="The waves of video search experience evolution on Bing cover image"
+            overlayText={`The waves of  video search experience evolution on Bing`}
+            tag="🌎 Web Experience"
           />
         </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
 
       <footer className="px-8 py-12 md:px-64 md:py-24 grid md:max-w-screen-2xl mx-auto w-full">
           <p>{'goooleon@gmail.com'} • <a href="https://www.linkedin.com/in/shengfeng-gu/" className="hover:underline">LinkedIn</a> </p>
-          <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2023-2024</p>
+          <p>Made 🖖🏽by <span className="text-black dark:text-white">©Gü</span> 2025-2026</p>
         </footer>
     </main>
   );

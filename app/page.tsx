@@ -15,13 +15,13 @@ export default function Home() {
           {`Hey, I am Gü`}
         </h1>
         <p className="mb-6 text-2xl font-regular md:w-9/12">
-          Ex-<span aria-label="Microsoft">Microsoft</span> <span className="font-semibold text-neutral-950 dark:text-white">Product Designer</span> based in <span aria-label="Location">🇨🇦 Vancouver,</span>
+           <span className="font-semibold text-neutral-950 dark:text-white">Senior Product Designer</span> at <a href="https://www.workstream.us/" className="underline hover:no-underline">Workstream</a> (ex-<span aria-label="Microsoft">Microsoft</span>)
         </p>
         <p className="mb-6 text-2xl font-regular md:w-9/12">
-          a creative mind that blends <span className="font-semibold text-neutral-950 dark:text-white">Human Centered Design</span> with <span className="font-semibold text-neutral-950 dark:text-white">Random Intuition</span>,
+          I design product experiences where <span className="font-semibold text-neutral-950 dark:text-white">people</span>, <span className="font-semibold text-neutral-950 dark:text-white">systems</span>, and <span className="font-semibold text-neutral-950 dark:text-white">AI</span> come together
         </p>
         <p className="mb-6 text-2xl font-regular md:w-9/12">
-          a free soul who enjoys <span aria-label="skiing">🎿</span> <span aria-label="frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
+          Based in Vancouver <span aria-label="Canada flag">🇨🇦</span> — usually somewhere between <span aria-label="skiing">🎿</span> <span aria-label="ultimate frisbee">🥏</span> <span aria-label="cycling">🚴🏽</span> <span aria-label="surfing">🏄🏼</span> <span aria-label="mountains">🗻</span>
         </p>
       </article>
 

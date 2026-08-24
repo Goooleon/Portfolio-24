@@ -52,10 +52,11 @@ const FeatureList: React.FC<FeatureListProps> = ({
               src={src}
               alt={alt}
               fill
-              objectFit="cover"
               quality={100}
               sizes="100vw"
               loading='lazy'
+              className="object-cover"
+              style={{ objectFit: 'cover' }}
             />
         ) : (
           <video

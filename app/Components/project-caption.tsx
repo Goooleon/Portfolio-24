@@ -39,10 +39,11 @@ const ProjectCaption: React.FC<ProjectCaptionProps> = ({
                         quality={100}
                         sizes="100vw"
                         fill
-                        objectFit="cover"
                         placeholder="blur"
                         blurDataURL={placeholderColor}
                         priority
+                        className="object-cover"
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
             </header>

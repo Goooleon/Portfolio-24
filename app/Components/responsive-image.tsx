@@ -25,23 +25,24 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
 
     // Construct an inline style object for the container div
     const containerStyle = {
-        paddingTop: imgSize ? `${imgSize}%` : '0%', // Dynamically set padding-top based on imgSize
+        aspectRatio: imgSize ? `${100 / Number(imgSize)}` : '1',
     };
 
     return (
         <div 
           ref={ref} 
           style={containerStyle} 
-          className={`w-full relative rounded-lg md:rounded-2xl overflow-hidden h-0 transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${containerClassName}`}>
+          className={`w-full relative rounded-lg md:rounded-2xl overflow-hidden transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${containerClassName}`}>
             {/* Apply inline style for dynamic padding-top. Adding h-0 to ensure the container's height is controlled by padding */}
             <Image
                 src={imgSrc}
                 alt={alt}
                 fill
-                objectFit="cover"
                 quality={100}
                 sizes="100vw"
                 loading='lazy'
+                className="object-cover"
+                style={{ objectFit: 'cover' }}
             />
         </div>
     );

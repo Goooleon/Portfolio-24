@@ -30,16 +30,19 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
     });
 
     const containerStyle = {
-        paddingTop: imgSize ? `${imgSize}%` : '0%',
+        aspectRatio: imgSize ? `${100 / Number(imgSize)}` : '1',
     };
+
+    const isPrimaryImage = imgSrc === '/bing-video-evolution-waves-cover.png';
+    const imageSizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw';
 
     return (
         <div
             ref={ref}
             style={containerStyle}
-            className={`relative w-full overflow-hidden pt-[49%] h-0 transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            className={`relative w-full overflow-hidden transition-all duration-700 ease-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {isLinkActive ? (
-                <Link href={link} className="block">
+                <Link href={link} className="relative block h-full w-full">
                     <div className="absolute inset-0 z-10 flex px-6 md:px-10 items-center justify-center bg-black bg-opacity-75 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                         <p className="font-alegreya text-white text-2xl font-medium text-center">{overlayText}</p>
                         <div className="z-10 absolute top-2 right-2 rounded-full bg-white bg-opacity-15 border border-solid border-white border-opacity-25">
@@ -50,24 +53,30 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
                         src={imgSrc}
                         alt={alt}
                         fill
-                        objectFit="cover"
+                        priority={isPrimaryImage}
                         quality={100}
-                        sizes="100vw"
-                        loading='lazy'
-                        className="transition duration-300 ease-out"
+                        sizes={imageSizes}
+                        loading={isPrimaryImage ? 'eager' : 'lazy'}
+                        unoptimized={imgSrc.endsWith('.gif')}
+                        className="transition duration-300 ease-out object-cover"
+                        style={{ objectFit: 'cover' }}
                     />
                 </Link>
             ) : (
-                <Image
-                    src={imgSrc}
-                    alt={alt}
-                    fill
-                    objectFit="cover"
-                    quality={100}
-                    sizes="100vw"
-                    loading='lazy'
-                    className="transition duration-300 ease-out"
-                />
+                <div className="relative h-full w-full">
+                    <Image
+                        src={imgSrc}
+                        alt={alt}
+                        fill
+                        priority={isPrimaryImage}
+                        quality={100}
+                        sizes={imageSizes}
+                        loading={isPrimaryImage ? 'eager' : 'lazy'}
+                        unoptimized={imgSrc.endsWith('.gif')}
+                        className="transition duration-300 ease-out object-cover"
+                        style={{ objectFit: 'cover' }}
+                    />
+                </div>
             )}
         </div>
     );

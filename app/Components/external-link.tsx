@@ -31,8 +31,9 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
                         src={favicon}
                         width={52}
                         height={52}
-                        objectFit="cover"
                         alt={alt}
+                        className="object-cover"
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
                 <div className="min-w-0 flex-grow">

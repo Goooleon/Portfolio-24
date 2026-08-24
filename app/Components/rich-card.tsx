@@ -40,7 +40,13 @@ const RichCard: React.FC<RichCardProps> = ({
             <div className="w-full relative overflow-hidden">
                 {imgSrc && (
                     <div className="image-container relative w-full h-72">
-                        <Image src={imgSrc} alt={imgAlt || 'Rich Card Image'} fill objectFit="cover" />
+                        <Image
+                            src={imgSrc}
+                            alt={imgAlt || 'Rich Card Image'}
+                            fill
+                            className="object-cover"
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                 )}
             </div>
